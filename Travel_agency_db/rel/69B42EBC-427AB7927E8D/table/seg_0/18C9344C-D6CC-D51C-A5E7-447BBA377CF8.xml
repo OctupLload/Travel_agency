@@ -1,17 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5736C588-9F3A-8B06-C5B7-F7A8245268E7" name="airlines">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="18C9344C-D6CC-D51C-A5E7-447BBA377CF8" name="positions">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 11:10:48 UTC</createdTime>
-<generatorID>3B1ED369-5677-0D36-37EB-08B1B0BF3C2A</generatorID>
+<createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<generatorID>4317E38C-095B-195F-EC3B-6F1233DC80E4</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="airline_id" id="824CEA0B-3049-64E3-33EB-5EA0BCA1BDB1">
+<Column name="position_id" id="DE67ECA3-F4F0-A9FE-6901-4B6C284C921C">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 11:10:48 UTC</createdTime>
-<generatorID>05B36B58-02C7-7C38-D2AE-D30A4A4BCFF4</generatorID>
+<createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<generatorID>77F18F77-633E-191C-661D-12DA2076D4D7</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -19,30 +19,29 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="title" id="9EDC426F-5926-6E0D-58F5-D0DD510DEF2A">
+<Column name="title" id="D2110EBF-E660-0031-4F1C-D32183F12F0C">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 11:10:48 UTC</createdTime>
-<generatorID>F4E4B013-1891-1DCB-DCAE-E8EB1D8F9AF3</generatorID>
+<createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<generatorID>D8537C3F-D75F-51F9-C047-858AD27FE8F9</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>40</dataTypeSize>
-<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<domain>DD9A3F97-27B1-5DDD-09AA-1731C197E52E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="73F551C7-8CF1-41ED-262C-53427BD98009" name="airlines_PK">
+<ind_PK_UK id="A5FE5A7F-ED7A-0E35-B897-74906E7AAB8F" name="positions_PK">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 11:10:48 UTC</createdTime>
-<generatorID>3DDA7DC0-8096-3F2E-B408-0A1E718B8BB8</generatorID>
+<createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<generatorID>4E7CCF70-ADC7-EF57-D8EF-A9441F819DDF</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="824CEA0B-3049-64E3-33EB-5EA0BCA1BDB1"/>
+<colUsage columnID="DE67ECA3-F4F0-A9FE-6901-4B6C284C921C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

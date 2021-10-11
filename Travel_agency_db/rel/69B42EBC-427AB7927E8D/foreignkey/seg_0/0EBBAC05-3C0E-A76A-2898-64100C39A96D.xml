@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0EBBAC05-3C0E-A76A-2898-64100C39A96D" containerWithKeyObject="072A8B1E-50FC-AC39-F3DF-43D20EB0FA01" localFKIndex="9948FA59-F798-6EF4-13C4-2DE92DC6280F" name="pass-cust_passports_FK">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<generatorID>29FEE756-9D5D-84B0-B3E6-17A723E07EF0</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<referredTableLongName>passports</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>54BCFE6B-4395-B4FA-8C85-142432256680</referredTableID>
+<keyObject>9E6D45BB-C87C-E17C-BA88-1486B881618D</keyObject>
+<referredKeyID>9E6D45BB-C87C-E17C-BA88-1486B881618D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>passport_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

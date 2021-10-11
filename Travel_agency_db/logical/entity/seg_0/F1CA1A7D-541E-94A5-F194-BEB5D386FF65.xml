@@ -64,6 +64,31 @@
 <domain>B9355EAE-20B8-AAE1-A590-710F65E7478F</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="birthdate" id="FA6D0BFA-7956-875A-F7D3-53D2D177EA23">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 11:24:09 UTC</createdTime>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<engineerTo>
+<item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="phone_number" id="E18AE2A4-9E3F-6B8A-A7E2-BDD8D6E55262">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 11:24:42 UTC</createdTime>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<engineerTo>
+<item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="1903FE30-3272-1C04-B734-2B0D43DA8DF3" name="customers PK">

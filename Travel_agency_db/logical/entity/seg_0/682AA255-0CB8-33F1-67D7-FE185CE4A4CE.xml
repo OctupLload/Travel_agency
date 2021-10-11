@@ -64,7 +64,7 @@
 <domain>3ECEAE6A-79E4-36F6-A4D9-19B79550AB04</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="operators_id" id="8A520BDA-050E-1A50-CD75-9B87D4D1864A">
+<Attribute name="operator_id" id="8A520BDA-050E-1A50-CD75-9B87D4D1864A">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-10 21:29:23 UTC</createdTime>
 <generatorID>B780C445-1F08-BDB7-7450-1605A682446D</generatorID>

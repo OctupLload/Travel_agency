@@ -27,7 +27,7 @@
 <domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="client_id" id="BBD76021-B094-3598-B029-48C73C03257C">
+<Attribute name="customer_id" id="BBD76021-B094-3598-B029-48C73C03257C">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 07:59:07 UTC</createdTime>
 <generatorID>956A9D15-44C5-5ED0-472B-B15F87B9599A</generatorID>
@@ -41,21 +41,7 @@
 <domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="passport_id" id="D8A5DD78-CA49-CA40-6751-655F145A18DC">
-<createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 07:59:07 UTC</createdTime>
-<generatorID>956A9D15-44C5-5ED0-472B-B15F87B9599A</generatorID>
-<ownerDesignName>Travel_agency_db</ownerDesignName>
-<engineerTo>
-<item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
-</engineerTo>
-<referedAttribute>DE0EF93C-2B72-1F30-054F-FEF6EA4DBE20</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="customer_id" id="1D9A36E0-84F7-43E7-2CC1-01FA41C9EE61">
+<Attribute name="employee_id" id="1D9A36E0-84F7-43E7-2CC1-01FA41C9EE61">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 07:59:36 UTC</createdTime>
 <generatorID>5A858F82-9832-5B5D-EA09-E01E3DDC36C5</generatorID>
@@ -83,7 +69,7 @@
 <domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="operators_id" id="C6FB7EEC-D9E8-2DDD-9D22-65ABCFAD42C1">
+<Attribute name="operator_id" id="C6FB7EEC-D9E8-2DDD-9D22-65ABCFAD42C1">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 07:59:56 UTC</createdTime>
 <generatorID>E9DD83E4-66B1-8901-127E-C5050F4EA572</generatorID>
@@ -124,7 +110,6 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>BBD76021-B094-3598-B029-48C73C03257C</attributeRef>
-<attributeRef>D8A5DD78-CA49-CA40-6751-655F145A18DC</attributeRef>
 <attributeRef>1D9A36E0-84F7-43E7-2CC1-01FA41C9EE61</attributeRef>
 <attributeRef>E93C8322-5A5A-2E38-7A1B-AB36350A1CF8</attributeRef>
 <attributeRef>C6FB7EEC-D9E8-2DDD-9D22-65ABCFAD42C1</attributeRef>

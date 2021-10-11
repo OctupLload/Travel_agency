@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AB072B78-421F-DF15-8BFB-702694CB0232" name="airlines">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5736C588-9F3A-8B06-C5B7-F7A8245268E7" name="airlines">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:37:18 UTC</createdTime>
+<createdTime>2021-10-11 11:10:48 UTC</createdTime>
 <generatorID>3B1ED369-5677-0D36-37EB-08B1B0BF3C2A</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="airline_id" id="05F6F0F3-45D9-EECC-A53A-7479EE905679">
+<Column name="airline_id" id="824CEA0B-3049-64E3-33EB-5EA0BCA1BDB1">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:37:18 UTC</createdTime>
+<createdTime>2021-10-11 11:10:48 UTC</createdTime>
 <generatorID>05B36B58-02C7-7C38-D2AE-D30A4A4BCFF4</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <use>0</use>
@@ -19,9 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="title" id="0593D181-567F-D911-38DA-EEC956A7BBAD">
+<Column name="title" id="9EDC426F-5926-6E0D-58F5-D0DD510DEF2A">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:37:18 UTC</createdTime>
+<createdTime>2021-10-11 11:10:48 UTC</createdTime>
 <generatorID>F4E4B013-1891-1DCB-DCAE-E8EB1D8F9AF3</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -33,16 +33,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="107D6D10-B71B-D386-C9FB-BA83A2F2EA93" name="airlines_PK">
+<ind_PK_UK id="73F551C7-8CF1-41ED-262C-53427BD98009" name="airlines_PK">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:37:18 UTC</createdTime>
+<createdTime>2021-10-11 11:10:48 UTC</createdTime>
 <generatorID>3DDA7DC0-8096-3F2E-B408-0A1E718B8BB8</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="05F6F0F3-45D9-EECC-A53A-7479EE905679"/>
+<colUsage columnID="824CEA0B-3049-64E3-33EB-5EA0BCA1BDB1"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

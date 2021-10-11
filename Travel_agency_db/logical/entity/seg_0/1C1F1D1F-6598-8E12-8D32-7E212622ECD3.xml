@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="92402BE8-1C1E-8F41-2DCA-7C6404286C72" name="t_operators">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1C1F1D1F-6598-8E12-8D32-7E212622ECD3" name="pass-cust">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-10 20:10:17 UTC</createdTime>
+<createdTime>2021-10-11 10:32:05 UTC</createdTime>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
@@ -15,44 +15,47 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="operator_id" id="53FE5B23-0539-64CC-D68A-257895178746">
+<Attribute name="customer_id" id="C6EB3DD1-A386-EC2A-C943-76BF0112BC6E">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-10 20:48:25 UTC</createdTime>
+<createdTime>2021-10-11 10:32:32 UTC</createdTime>
+<generatorID>1F94863C-F6AA-C810-4429-B026B27C9AFE</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
 </engineerTo>
+<referedAttribute>532D6E1C-D7B0-BFD9-19AC-800965A8BA7F</referedAttribute>
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="title" id="60DF7434-B82E-7F65-E135-53E858891F81">
+<Attribute name="passport_id" id="881407DA-EA87-77F2-4CB5-D2F60064B888">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-10 20:48:50 UTC</createdTime>
+<createdTime>2021-10-11 10:33:17 UTC</createdTime>
+<generatorID>29FEE756-9D5D-84B0-B3E6-17A723E07EF0</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
 </engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>40</dataTypeSize>
-<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<referedAttribute>814FCC60-E443-613B-528A-421294C76E8C</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="84C6814B-CDF2-0A30-6E16-BB9C04D754BE" name="tour_operators_PK">
+<identifier id="87812718-D471-BC8C-C22D-2DE2FC4CDDC7" name="passports-customers PK">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-10 20:48:49 UTC</createdTime>
+<createdTime>2021-10-11 10:32:32 UTC</createdTime>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="false"/>
+<item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>53FE5B23-0539-64CC-D68A-257895178746</attributeRef>
+<attributeRef>C6EB3DD1-A386-EC2A-C943-76BF0112BC6E</attributeRef>
+<attributeRef>881407DA-EA87-77F2-4CB5-D2F60064B888</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

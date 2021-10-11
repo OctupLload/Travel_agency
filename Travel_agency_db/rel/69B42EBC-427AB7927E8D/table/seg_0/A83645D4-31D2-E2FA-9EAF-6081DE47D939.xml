@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="80029CBF-D0B4-68DE-0F9F-936E5C6B61F0" name="staff">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A83645D4-31D2-E2FA-9EAF-6081DE47D939" name="staff">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:37:18 UTC</createdTime>
+<createdTime>2021-10-11 11:10:48 UTC</createdTime>
 <generatorID>094D2D66-47D6-3B01-E960-824E8EEB281A</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="customer_id" id="A032F406-E174-6355-F95E-ED31BF1F967B">
+<Column name="employee_id" id="CE131919-1BA9-9B5B-21D9-BBDFDAE1A745">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:37:18 UTC</createdTime>
+<createdTime>2021-10-11 11:10:48 UTC</createdTime>
 <generatorID>8F3096F9-662B-202D-5EFB-83F65C37B85A</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <use>0</use>
@@ -19,9 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="last_name" id="BDF08446-A7BD-D50B-DD87-74B58BE6535B">
+<Column name="last_name" id="FB043A48-131A-016A-DF7D-2CE400F30247">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:37:18 UTC</createdTime>
+<createdTime>2021-10-11 11:10:48 UTC</createdTime>
 <generatorID>024DA93D-D7FA-A90C-C5A3-73D9C17B274A</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <use>0</use>
@@ -30,9 +30,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="first_name" id="089BDB03-A667-9A4D-A5A5-C3DC9B0C01F8">
+<Column name="first_name" id="BBCE487C-5FBC-1A18-6608-F2ED684648CE">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:37:18 UTC</createdTime>
+<createdTime>2021-10-11 11:10:48 UTC</createdTime>
 <generatorID>2B6496F8-0803-787D-781A-10694FE36795</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <use>0</use>
@@ -41,9 +41,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="surname" id="968C92DA-C800-F4D3-7E76-757D454D7BA1">
+<Column name="surname" id="0DA4B6F8-9CE2-2197-871E-ECEE2C01D484">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:37:18 UTC</createdTime>
+<createdTime>2021-10-11 11:10:48 UTC</createdTime>
 <generatorID>19D47BF0-25D1-501C-96B9-BDE5C582E209</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -53,9 +53,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="address" id="ECCC0981-89FC-2B09-776C-4FE6D2B4C2C8">
+<Column name="address" id="349B90D8-6E91-A79E-E788-C316408B065F">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:37:18 UTC</createdTime>
+<createdTime>2021-10-11 11:10:48 UTC</createdTime>
 <generatorID>79A0F189-70F3-1516-7F1E-38B12FFD9F5E</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <use>0</use>
@@ -64,9 +64,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="phone_number" id="150627FA-5005-0CEF-D31F-8D8E03C29595">
+<Column name="phone_number" id="33227246-3D9C-B397-0B3A-603B3129F1D4">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:37:18 UTC</createdTime>
+<createdTime>2021-10-11 11:10:48 UTC</createdTime>
 <generatorID>228D064B-C59F-EDE0-1D25-BF86CA318E18</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -76,9 +76,9 @@
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="positions_position_id" id="959DCA8A-DB07-93F5-0699-879E34F18520">
+<Column name="positions_position_id" id="7704FDBD-B155-F035-CE16-2D0631FCF839">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:37:18 UTC</createdTime>
+<createdTime>2021-10-11 11:10:48 UTC</createdTime>
 <generatorID>1EF3436F-F1DB-CB6B-6DBE-2EE398DBF6E1</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <use>0</use>
@@ -88,32 +88,32 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="A7F8B80D-56DE-AE60-3C28-CF6FD96EF070" referredColumn="1204E3EC-B796-9330-B70A-BF4FF2FB6302"/>
+<colAssociation fkAssociation="D7E6CE21-E096-765D-172C-A1E32BB27255" referredColumn="911D3DF8-85BB-9C3C-E943-4C07C7FBC6E5"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="D792CF13-ADA0-E89D-6DAE-75630984FAB7" name="staff_PK">
+<ind_PK_UK id="8E547566-6477-D244-A415-4F786D474DF3" name="staff_PK">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:37:18 UTC</createdTime>
+<createdTime>2021-10-11 11:10:48 UTC</createdTime>
 <generatorID>1CF739B3-FB40-633B-AC8D-E594AC776EE7</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="A032F406-E174-6355-F95E-ED31BF1F967B"/>
+<colUsage columnID="CE131919-1BA9-9B5B-21D9-BBDFDAE1A745"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="B032C649-A7BB-E165-95E4-FE3E58531F06" name="staff_positions_FK">
+<ind_PK_UK id="000DE18B-E6D6-2FAC-7B25-63F3EB1DD4EF" name="staff_positions_FK">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:37:18 UTC</createdTime>
+<createdTime>2021-10-11 11:10:48 UTC</createdTime>
 <generatorID>8DF3AC88-FCDE-FC74-48CE-16C7B8C8A961</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="959DCA8A-DB07-93F5-0699-879E34F18520"/>
+<colUsage columnID="7704FDBD-B155-F035-CE16-2D0631FCF839"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -1,17 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DBD79478-D60A-B3FE-2EAE-C74B7977DBA1" name="hotels">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="206B1345-83D2-88D6-0500-7D642354569A" name="customers">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:37:18 UTC</createdTime>
-<generatorID>154DC61E-3A83-0BDD-3074-11A95C046CD2</generatorID>
+<createdTime>2021-10-11 11:10:48 UTC</createdTime>
+<generatorID>F1CA1A7D-541E-94A5-F194-BEB5D386FF65</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="hotel_id" id="10EB3561-B742-045C-C0EE-CAE2AF09FEDC">
+<Column name="customer_id" id="BF59BF21-E312-F582-C243-B9596BFC3A82">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:37:18 UTC</createdTime>
-<generatorID>F103D916-0624-D06F-B1E8-0ED1B2901CC8</generatorID>
+<createdTime>2021-10-11 11:10:48 UTC</createdTime>
+<generatorID>532D6E1C-D7B0-BFD9-19AC-800965A8BA7F</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -19,53 +19,52 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="title" id="7C0FD8C4-8ECA-34AA-701F-E2C5012CB731">
+<Column name="last_name" id="7C4FA6D4-7ACF-24BE-6C8B-C7E4D8F6FAED">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:37:18 UTC</createdTime>
-<generatorID>5F171CD0-D31E-3E05-3382-6A7C3965EB0C</generatorID>
+<createdTime>2021-10-11 11:10:48 UTC</createdTime>
+<generatorID>26D2BD5B-F71C-C45A-4951-A583748420BC</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>DD9A3F97-27B1-5DDD-09AA-1731C197E52E</domain>
+<domain>B9355EAE-20B8-AAE1-A590-710F65E7478F</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="stars" id="823BDBD2-7C92-B7A9-105E-1FDC987BF6CD">
+<Column name="first_name" id="95B9E945-2040-04E8-5047-16376459AD53">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:37:18 UTC</createdTime>
-<generatorID>BD1D35E7-A4B3-7F98-584A-9F2C9D8BECF8</generatorID>
+<createdTime>2021-10-11 11:10:48 UTC</createdTime>
+<generatorID>1F31F994-8F8A-51F8-8D98-E04031A02BB0</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
-<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<domain>B9355EAE-20B8-AAE1-A590-710F65E7478F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="rating" id="EF8A294C-498F-F83D-37C6-8F1423E38F67">
+<Column name="surname" id="68E485CC-AE81-1316-1F69-01BDCEF875D6">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:37:18 UTC</createdTime>
-<generatorID>48C2A92F-D556-E684-72C9-92F8E5444CB6</generatorID>
+<createdTime>2021-10-11 11:10:48 UTC</createdTime>
+<generatorID>594FEEA1-95A0-BEED-1F4D-E31E978D0CCD</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
-<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<domain>B9355EAE-20B8-AAE1-A590-710F65E7478F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="C1A3A101-1F58-7FCC-624E-01B6D71591DE" name="hotels_PK">
+<ind_PK_UK id="A22FFA2B-A515-46CA-BD78-BA7DD98D709C" name="customers_PK">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:37:18 UTC</createdTime>
-<generatorID>AF820EF1-336B-8C97-11C7-7C71B4A6A300</generatorID>
+<createdTime>2021-10-11 11:10:48 UTC</createdTime>
+<generatorID>1903FE30-3272-1C04-B734-2B0D43DA8DF3</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="10EB3561-B742-045C-C0EE-CAE2AF09FEDC"/>
+<colUsage columnID="BF59BF21-E312-F582-C243-B9596BFC3A82"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

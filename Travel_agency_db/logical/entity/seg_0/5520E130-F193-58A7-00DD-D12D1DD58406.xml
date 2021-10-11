@@ -40,7 +40,7 @@
 <dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="flight id" id="C263FA6E-63F0-4F19-259D-A306ACFFC34F">
+<Attribute name="flight_id" id="C263FA6E-63F0-4F19-259D-A306ACFFC34F">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 07:52:41 UTC</createdTime>
 <generatorID>EAE85E4C-C3C0-DE0E-3E34-17693A32A3A3</generatorID>

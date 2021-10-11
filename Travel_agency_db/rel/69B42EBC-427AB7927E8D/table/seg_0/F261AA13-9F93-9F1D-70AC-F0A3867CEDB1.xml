@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E34A3251-8794-DA9A-7F4B-C1E36BEE8B3C" name="tickets">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F261AA13-9F93-9F1D-70AC-F0A3867CEDB1" name="tickets">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<createdTime>2021-10-11 08:37:18 UTC</createdTime>
 <generatorID>5520E130-F193-58A7-00DD-D12D1DD58406</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ticket_id" id="4CAD38D4-D4E7-5D00-8038-1307EB3F21A2">
+<Column name="ticket_id" id="F239037A-D805-0F5F-C137-EF5074C343E6">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<createdTime>2021-10-11 08:37:18 UTC</createdTime>
 <generatorID>2A9B8318-6E6A-B642-7CCB-ED857252CBC4</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <use>0</use>
@@ -19,9 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="class_of_service" id="3A8D8515-7865-F8E1-1006-5CA455A3626C">
+<Column name="class_of_service" id="381335CF-27ED-EC3F-C1A5-0595EAB091F0">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<createdTime>2021-10-11 08:37:18 UTC</createdTime>
 <generatorID>C6C7DD3C-B8C3-D3D8-4461-DF02099EC3CF</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -31,9 +31,9 @@
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="flights_flight_id" id="4FEBFA4C-7BEE-6D68-51F2-86DF0766B45F">
+<Column name="flights_flight_id" id="58AFE6F1-1D4B-69D5-5590-0F04C3A085ED">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<createdTime>2021-10-11 08:37:18 UTC</createdTime>
 <generatorID>C263FA6E-63F0-4F19-259D-A306ACFFC34F</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <use>0</use>
@@ -43,32 +43,32 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="9451E02D-56E6-F43C-F80B-21F42CB7DA78" referredColumn="95742C6F-01F1-C13D-1546-598D23E9AF16"/>
+<colAssociation fkAssociation="486E2E52-77C4-C664-9ED9-5B576335D58C" referredColumn="505B6531-8101-3E3B-1F26-8E941756F886"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="3B4E372D-2693-0FE7-44E2-B207FDE54CA5" name="tickets_PK">
+<ind_PK_UK id="1CACC668-2D04-D981-73DC-04D0A5B42286" name="tickets_PK">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<createdTime>2021-10-11 08:37:18 UTC</createdTime>
 <generatorID>6F0E16F6-DBCF-C0E7-72CA-477EB20BF876</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="4CAD38D4-D4E7-5D00-8038-1307EB3F21A2"/>
+<colUsage columnID="F239037A-D805-0F5F-C137-EF5074C343E6"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="26F0DF43-2FD2-DF85-A230-46B1804791BD" name="tickets_flights_FK">
+<ind_PK_UK id="88C4503C-AC54-3D80-5458-EADAD06D9B59" name="tickets_flights_FK">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<createdTime>2021-10-11 08:37:18 UTC</createdTime>
 <generatorID>EAE85E4C-C3C0-DE0E-3E34-17693A32A3A3</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="4FEBFA4C-7BEE-6D68-51F2-86DF0766B45F"/>
+<colUsage columnID="58AFE6F1-1D4B-69D5-5590-0F04C3A085ED"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

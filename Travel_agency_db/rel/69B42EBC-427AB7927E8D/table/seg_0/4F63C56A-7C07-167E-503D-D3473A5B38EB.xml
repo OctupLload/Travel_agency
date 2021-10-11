@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="33BD6FB7-6521-BACB-85A0-06B1ED25F8DA" name="passports">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4F63C56A-7C07-167E-503D-D3473A5B38EB" name="passports">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<createdTime>2021-10-11 08:37:18 UTC</createdTime>
 <generatorID>E3D4899E-440B-903F-9472-B2FCF7DDF3EA</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="passport_id" id="5676150F-3DA1-A015-D927-E0A398F4A7EA">
+<Column name="passport_id" id="A8B76D5B-F6C3-B96F-A375-A6E77BD4020F">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<createdTime>2021-10-11 08:37:18 UTC</createdTime>
 <generatorID>814FCC60-E443-613B-528A-421294C76E8C</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <use>0</use>
@@ -19,9 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="series" id="78FE8BCA-0B34-D945-CFC9-305E6D47F13C">
+<Column name="series" id="BFA3F277-8583-AFF6-430D-469F28037BA4">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<createdTime>2021-10-11 08:37:18 UTC</createdTime>
 <generatorID>EBA6BBC1-388A-009B-4F2E-93D4B4B5B4E8</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -31,9 +31,9 @@
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="passport_num" id="891FCD96-45CD-07F3-2076-F441E410F042">
+<Column name="passport_num" id="219127BD-F1FB-92A9-FD13-298C9FB64127">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<createdTime>2021-10-11 08:37:18 UTC</createdTime>
 <generatorID>E59A08AA-BDEB-09A1-741C-16A7569D4776</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -43,9 +43,9 @@
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="issued_by" id="AFA7B096-59C4-DF51-E53E-CF910021F1A1">
+<Column name="issued_by" id="8417E0AA-5472-351D-0E24-DB21F6B56A64">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<createdTime>2021-10-11 08:37:18 UTC</createdTime>
 <generatorID>296C8B28-C0B0-1360-1EC2-7EB31D550A36</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -55,9 +55,9 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="date_of_ussue" id="F0FD8FDE-F9A1-87CE-EA8D-80BDD02D9F4B">
+<Column name="date_of_ussue" id="620E44D8-CA5C-6789-FD0D-DCC27EED9132">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<createdTime>2021-10-11 08:37:18 UTC</createdTime>
 <generatorID>A01D023A-6BF5-E4B7-02BD-6541B90462C3</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -68,16 +68,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="D775FC5D-FF61-7B96-E344-6D39E26E6667" name="passports_PK">
+<ind_PK_UK id="8828CE29-607D-FFC9-917F-01B66CA4FF9C" name="passports_PK">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<createdTime>2021-10-11 08:37:18 UTC</createdTime>
 <generatorID>ECBB8639-CCE0-40AE-CD97-DF21B9E3487A</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="5676150F-3DA1-A015-D927-E0A398F4A7EA"/>
+<colUsage columnID="A8B76D5B-F6C3-B96F-A375-A6E77BD4020F"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

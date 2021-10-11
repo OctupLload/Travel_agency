@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="hotel id" id="F103D916-0624-D06F-B1E8-0ED1B2901CC8">
+<Attribute name="hotel_id" id="F103D916-0624-D06F-B1E8-0ED1B2901CC8">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-10 20:34:37 UTC</createdTime>
 <ownerDesignName>Travel_agency_db</ownerDesignName>

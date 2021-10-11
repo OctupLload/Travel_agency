@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="position id" id="77F18F77-633E-191C-661D-12DA2076D4D7">
+<Attribute name="position_id" id="77F18F77-633E-191C-661D-12DA2076D4D7">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-10 20:28:17 UTC</createdTime>
 <ownerDesignName>Travel_agency_db</ownerDesignName>

@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="072A8B1E-50FC-AC39-F3DF-43D20EB0FA01" name="pass-cust">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="072A8B1E-50FC-AC39-F3DF-43D20EB0FA01" name="pass_cust">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>1C1F1D1F-6598-8E12-8D32-7E212622ECD3</generatorID>

@@ -64,7 +64,7 @@
 <colAssociation fkAssociation="51383CDB-682F-AB4E-47F2-F6857E6DA383" referredColumn="D8EBF1E4-A5F0-6A46-56F2-0CC716F6DEF6"/>
 </associations>
 </Column>
-<Column name="tours_operator_id" id="235DB421-85E1-65BF-964D-FAC4009F6CC7">
+<Column name="tours_t_operators_operator_id" id="235DB421-85E1-65BF-964D-FAC4009F6CC7">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>C6FB7EEC-D9E8-2DDD-9D22-65ABCFAD42C1</generatorID>

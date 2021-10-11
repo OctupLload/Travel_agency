@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="154DC61E-3A83-0BDD-3074-11A95C046CD2" name="hotels">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-10 20:09:26 UTC</createdTime>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<engineerTo>
+<item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="hotel id" id="F103D916-0624-D06F-B1E8-0ED1B2901CC8">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-10 20:34:37 UTC</createdTime>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<engineerTo>
+<item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="title" id="5F171CD0-D31E-3E05-3382-6A7C3965EB0C">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-10 20:34:46 UTC</createdTime>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<engineerTo>
+<item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DD9A3F97-27B1-5DDD-09AA-1731C197E52E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stars" id="BD1D35E7-A4B3-7F98-584A-9F2C9D8BECF8">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-10 20:36:35 UTC</createdTime>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<engineerTo>
+<item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rating" id="48C2A92F-D556-E684-72C9-92F8E5444CB6">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-10 20:35:09 UTC</createdTime>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<engineerTo>
+<item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AF820EF1-336B-8C97-11C7-7C71B4A6A300" name="list_of_hotels_PK">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-10 20:34:45 UTC</createdTime>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F103D916-0624-D06F-B1E8-0ED1B2901CC8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="staff-to-treaties" directorySegmentName="seg_0" id="5A858F82-9832-5B5D-EA09-E01E3DDC36C5">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 07:59:36 UTC</createdTime>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<engineerTo>
+<item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
+</engineerTo>
+<sourcePk>1CF739B3-FB40-633B-AC8D-E594AC776EE7</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>094D2D66-47D6-3B01-E960-824E8EEB281A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F9D53027-045F-CA59-CA40-FAA30A792CA3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

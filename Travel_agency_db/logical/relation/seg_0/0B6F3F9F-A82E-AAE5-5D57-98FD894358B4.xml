@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="passport-to-customers" directorySegmentName="seg_0" id="0B6F3F9F-A82E-AAE5-5D57-98FD894358B4">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 07:58:40 UTC</createdTime>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<engineerTo>
+<item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
+</engineerTo>
+<sourcePk>ECBB8639-CCE0-40AE-CD97-DF21B9E3487A</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E3D4899E-440B-903F-9472-B2FCF7DDF3EA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F1CA1A7D-541E-94A5-F194-BEB5D386FF65</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

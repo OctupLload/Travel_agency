@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C8723C14-28F2-FE4E-9CF4-8E5719A9F251" name="flights">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<generatorID>6B12B907-52E1-82BE-C402-364F751E5DE3</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="flight_id" id="95742C6F-01F1-C13D-1546-598D23E9AF16">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<generatorID>F3E36879-2DCA-A1CD-8A3D-D36DC50282BF</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="departure_date" id="C07AC662-C8FB-816F-3AD2-718F78A832E7">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<generatorID>C8943C49-896D-645A-FD14-F583B3C3D85A</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="departure_time" id="25C430C0-4A05-2C3C-4439-2BE4BE2BCEEF">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<generatorID>43C676EF-57BE-BE22-4CB9-825109F8B64D</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="airlines_airline_id" id="E129D682-9596-88AF-C1E8-A9696A30F8E2">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<generatorID>C1BC2B19-3D34-D989-3413-27040B923B1A</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EEBAB0E7-D9EE-23D4-8C26-365C41991338" referredColumn="00BCBDF1-31EC-4EBE-0FB0-98E504AE3202"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EB63B8E5-5874-404E-A7DE-EE116BF95428" name="flights_PK">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<generatorID>F775B106-0E25-F830-01C0-432D9EE1CC63</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95742C6F-01F1-C13D-1546-598D23E9AF16"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB99B635-9C36-D27A-C1C9-4A1A64CAB713" name="flights_airlines_FK">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<generatorID>CE21B60C-93B4-D159-D1BC-EA80F41FAA46</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E129D682-9596-88AF-C1E8-A9696A30F8E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

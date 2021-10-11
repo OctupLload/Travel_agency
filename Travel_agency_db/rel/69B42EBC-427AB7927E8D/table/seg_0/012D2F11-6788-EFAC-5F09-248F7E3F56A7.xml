@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="012D2F11-6788-EFAC-5F09-248F7E3F56A7" name="hotels">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<generatorID>154DC61E-3A83-0BDD-3074-11A95C046CD2</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="hotel_id" id="A7BA6F56-0EAD-3367-A031-EC1FBB72B3BE">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<generatorID>F103D916-0624-D06F-B1E8-0ED1B2901CC8</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="title" id="4EB8748D-6176-D75C-52E8-D6C2125CC99B">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<generatorID>5F171CD0-D31E-3E05-3382-6A7C3965EB0C</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DD9A3F97-27B1-5DDD-09AA-1731C197E52E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stars" id="179D40B9-4E99-A479-299F-57A72E750B8A">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<generatorID>BD1D35E7-A4B3-7F98-584A-9F2C9D8BECF8</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rating" id="0C53A234-FF8B-013C-19EF-2B317A6FF133">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<generatorID>48C2A92F-D556-E684-72C9-92F8E5444CB6</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0FDF1224-28C3-A52B-96E5-0840008200B5" name="hotels_PK">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<generatorID>AF820EF1-336B-8C97-11C7-7C71B4A6A300</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7BA6F56-0EAD-3367-A031-EC1FBB72B3BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

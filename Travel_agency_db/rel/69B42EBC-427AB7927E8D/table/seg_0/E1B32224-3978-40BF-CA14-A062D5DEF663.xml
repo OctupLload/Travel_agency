@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E1B32224-3978-40BF-CA14-A062D5DEF663" name="staff">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<generatorID>094D2D66-47D6-3B01-E960-824E8EEB281A</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="customer_id" id="5A864058-5F02-6DB5-4122-C0C6D57C1B7F">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<generatorID>8F3096F9-662B-202D-5EFB-83F65C37B85A</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_name" id="29A66B32-5A9A-EF2E-7764-8466D521B503">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<generatorID>024DA93D-D7FA-A90C-C5A3-73D9C17B274A</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B9355EAE-20B8-AAE1-A590-710F65E7478F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="first_name" id="28EC4C6B-F305-E2C3-0343-E47E96C7BFB3">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<generatorID>2B6496F8-0803-787D-781A-10694FE36795</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B9355EAE-20B8-AAE1-A590-710F65E7478F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="surname" id="B8C540E8-CAD9-4509-4BB9-3993C2237CC5">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<generatorID>19D47BF0-25D1-501C-96B9-BDE5C582E209</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B9355EAE-20B8-AAE1-A590-710F65E7478F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address" id="398CC66E-330C-BBB4-1FC1-822D35B33034">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<generatorID>79A0F189-70F3-1516-7F1E-38B12FFD9F5E</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>36D69FD7-A05E-FFC3-A764-B7573EDD3AC1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phone_number" id="E976A9A2-FA69-E541-4AD6-5EAAD49911E8">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<generatorID>228D064B-C59F-EDE0-1D25-BF86CA318E18</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="positions_position_id" id="7006DCEA-7A6D-970B-14C9-09267438B46A">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<generatorID>1EF3436F-F1DB-CB6B-6DBE-2EE398DBF6E1</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FCAB84BB-43A4-D7C4-860C-A35277B19BB5" referredColumn="AF13A7D3-A79E-B63A-4E74-DEABBE007009"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="933E72BD-B82C-0F8D-F641-F836A6538052" name="staff_PK">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<generatorID>1CF739B3-FB40-633B-AC8D-E594AC776EE7</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A864058-5F02-6DB5-4122-C0C6D57C1B7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9EAD3555-B9E9-E31C-ACAE-68209C216B62" name="staff_positions_FK">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-11 08:17:53 UTC</createdTime>
+<generatorID>8DF3AC88-FCDE-FC74-48CE-16C7B8C8A961</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7006DCEA-7A6D-970B-14C9-09267438B46A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

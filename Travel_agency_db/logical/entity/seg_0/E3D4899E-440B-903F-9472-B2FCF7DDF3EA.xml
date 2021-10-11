@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E3D4899E-440B-903F-9472-B2FCF7DDF3EA" name="passports">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-10 20:00:23 UTC</createdTime>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<engineerTo>
+<item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="passport_id" id="814FCC60-E443-613B-528A-421294C76E8C">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-10 20:19:05 UTC</createdTime>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<engineerTo>
+<item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="series" id="EBA6BBC1-388A-009B-4F2E-93D4B4B5B4E8">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-10 20:19:25 UTC</createdTime>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<engineerTo>
+<item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="passport_num" id="E59A08AA-BDEB-09A1-741C-16A7569D4776">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-10 20:20:36 UTC</createdTime>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<engineerTo>
+<item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="issued_by" id="296C8B28-C0B0-1360-1EC2-7EB31D550A36">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-10 20:22:07 UTC</createdTime>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<engineerTo>
+<item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date_of_ussue" id="A01D023A-6BF5-E4B7-02BD-6541B90462C3">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-10 20:23:06 UTC</createdTime>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<engineerTo>
+<item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="ECBB8639-CCE0-40AE-CD97-DF21B9E3487A" name="passports PK">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-10 20:19:19 UTC</createdTime>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>814FCC60-E443-613B-528A-421294C76E8C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -13,9 +13,9 @@
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>F103D916-0624-D06F-B1E8-0ED1B2901CC8</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -24,10 +24,11 @@
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>5F171CD0-D31E-3E05-3382-6A7C3965EB0C</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>DD9A3F97-27B1-5DDD-09AA-1731C197E52E</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="stars" id="91CA03C7-5674-F0D9-F945-AF38440CBC32">

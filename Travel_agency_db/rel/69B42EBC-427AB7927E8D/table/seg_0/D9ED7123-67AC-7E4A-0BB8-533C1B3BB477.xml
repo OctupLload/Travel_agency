@@ -13,9 +13,9 @@
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>8F3096F9-662B-202D-5EFB-83F65C37B85A</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -24,10 +24,11 @@
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>024DA93D-D7FA-A90C-C5A3-73D9C17B274A</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>B9355EAE-20B8-AAE1-A590-710F65E7478F</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="first_name" id="00E98D14-F21B-704C-D3B9-E6B0FDF3D09D">
@@ -35,10 +36,11 @@
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>2B6496F8-0803-787D-781A-10694FE36795</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>B9355EAE-20B8-AAE1-A590-710F65E7478F</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="surname" id="77A3E6AE-8F92-5A66-FB6B-CA4FD40FBCBD">
@@ -47,10 +49,11 @@
 <generatorID>19D47BF0-25D1-501C-96B9-BDE5C582E209</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>B9355EAE-20B8-AAE1-A590-710F65E7478F</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="address" id="519985B6-E89A-B97F-2D20-5218015487B1">
@@ -58,10 +61,11 @@
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>79A0F189-70F3-1516-7F1E-38B12FFD9F5E</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>36D69FD7-A05E-FFC3-A764-B7573EDD3AC1</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="phone_number" id="CB3BCE19-AB20-E7FD-E375-2677DB20020B">
@@ -81,9 +85,9 @@
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>1EF3436F-F1DB-CB6B-6DBE-2EE398DBF6E1</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>

@@ -13,9 +13,9 @@
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>2A9B8318-6E6A-B642-7CCB-ED857252CBC4</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -36,9 +36,8 @@
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>C263FA6E-63F0-4F19-259D-A306ACFFC34F</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
-<use>0</use>
+<use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>

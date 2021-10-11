@@ -13,9 +13,8 @@
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>C6EB3DD1-A386-EC2A-C943-76BF0112BC6E</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
-<use>0</use>
+<use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -28,9 +27,8 @@
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>881407DA-EA87-77F2-4CB5-D2F60064B888</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
-<use>0</use>
+<use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -53,7 +51,7 @@
 <colUsage columnID="1E1F8F77-D656-2B63-9C6F-5FE9314D03BD"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="7F25E32B-F5B8-7718-3F60-8CD97CA4AFD8" name="pass-cust_customers_FK">
+<ind_PK_UK id="7F25E32B-F5B8-7718-3F60-8CD97CA4AFD8" name="pass_cust_customers_FK">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>1F94863C-F6AA-C810-4429-B026B27C9AFE</generatorID>
@@ -64,7 +62,7 @@
 <colUsage columnID="658B2D56-FF9B-8C74-A27F-BEECBABD3378"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9948FA59-F798-6EF4-13C4-2DE92DC6280F" name="pass-cust_passports_FK">
+<ind_PK_UK id="9948FA59-F798-6EF4-13C4-2DE92DC6280F" name="pass_cust_passports_FK">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>29FEE756-9D5D-84B0-B3E6-17A723E07EF0</generatorID>

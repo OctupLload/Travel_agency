@@ -22,9 +22,9 @@
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="class_of_service" id="C6C7DD3C-B8C3-D3D8-4461-DF02099EC3CF">
@@ -49,9 +49,8 @@
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
 </engineerTo>
 <referedAttribute>F3E36879-2DCA-A1CD-8A3D-D36DC50282BF</referedAttribute>
-<use>0</use>
+<use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

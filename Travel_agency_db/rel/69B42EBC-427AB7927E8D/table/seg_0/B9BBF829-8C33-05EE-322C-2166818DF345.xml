@@ -13,9 +13,9 @@
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>532D6E1C-D7B0-BFD9-19AC-800965A8BA7F</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -24,10 +24,11 @@
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>26D2BD5B-F71C-C45A-4951-A583748420BC</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>B9355EAE-20B8-AAE1-A590-710F65E7478F</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="first_name" id="94F13355-329F-5A94-EEA3-A577792068BC">
@@ -35,10 +36,11 @@
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>1F31F994-8F8A-51F8-8D98-E04031A02BB0</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>B9355EAE-20B8-AAE1-A590-710F65E7478F</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="surname" id="2BF46E0A-B8BD-5897-46FB-DE55EDEB4735">
@@ -47,10 +49,11 @@
 <generatorID>594FEEA1-95A0-BEED-1F4D-E31E978D0CCD</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>B9355EAE-20B8-AAE1-A590-710F65E7478F</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="birthdate" id="459E5F3F-64B2-12CD-D2AB-7731017E5F05">

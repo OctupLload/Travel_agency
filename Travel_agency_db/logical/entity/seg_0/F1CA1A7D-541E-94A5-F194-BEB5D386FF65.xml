@@ -22,9 +22,9 @@
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="last_name" id="26D2BD5B-F71C-C45A-4951-A583748420BC">
@@ -34,10 +34,11 @@
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>B9355EAE-20B8-AAE1-A590-710F65E7478F</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="first_name" id="1F31F994-8F8A-51F8-8D98-E04031A02BB0">
 <createdBy>Пользователь</createdBy>
@@ -46,10 +47,11 @@
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>B9355EAE-20B8-AAE1-A590-710F65E7478F</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="surname" id="594FEEA1-95A0-BEED-1F4D-E31E978D0CCD">
 <createdBy>Пользователь</createdBy>
@@ -59,10 +61,11 @@
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>B9355EAE-20B8-AAE1-A590-710F65E7478F</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="birthdate" id="FA6D0BFA-7956-875A-F7D3-53D2D177EA23">
 <createdBy>Пользователь</createdBy>

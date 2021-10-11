@@ -22,9 +22,9 @@
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="last_name" id="024DA93D-D7FA-A90C-C5A3-73D9C17B274A">
@@ -34,10 +34,11 @@
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>B9355EAE-20B8-AAE1-A590-710F65E7478F</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="first_name" id="2B6496F8-0803-787D-781A-10694FE36795">
 <createdBy>Пользователь</createdBy>
@@ -46,10 +47,11 @@
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>B9355EAE-20B8-AAE1-A590-710F65E7478F</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="surname" id="19D47BF0-25D1-501C-96B9-BDE5C582E209">
 <createdBy>Пользователь</createdBy>
@@ -59,10 +61,11 @@
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>B9355EAE-20B8-AAE1-A590-710F65E7478F</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="address" id="79A0F189-70F3-1516-7F1E-38B12FFD9F5E">
 <createdBy>Пользователь</createdBy>
@@ -71,10 +74,11 @@
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
 </engineerTo>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>36D69FD7-A05E-FFC3-A764-B7573EDD3AC1</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="phone_number" id="228D064B-C59F-EDE0-1D25-BF86CA318E18">
 <createdBy>Пользователь</createdBy>
@@ -98,9 +102,9 @@
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
 </engineerTo>
 <referedAttribute>77F18F77-633E-191C-661D-12DA2076D4D7</referedAttribute>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

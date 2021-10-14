@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B7DC551F-5196-BC1E-D728-42F7C88C5200" containerWithKeyObject="A85AEC7D-B432-4FA1-DF22-B4841F56C7FF" localFKIndex="107268C0-EBC8-A339-1E9E-FA8FC9E07560" name="tours_t_operators_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B7DC551F-5196-BC1E-D728-42F7C88C5200" containerWithKeyObject="A85AEC7D-B432-4FA1-DF22-B4841F56C7FF" localFKIndex="107268C0-EBC8-A339-1E9E-FA8FC9E07560" name="FK_tours_tr_operators">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>B780C445-1F08-BDB7-7450-1605A682446D</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
-<referredTableLongName>t_operators</referredTableLongName>
+<referredTableLongName>tr_operators</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>070E4B3E-04B6-44DE-0EFC-3A1D12CF804A</referredTableID>
 <keyObject>6FA0B715-611F-EFD0-D966-1B962ECC6DCC</keyObject>

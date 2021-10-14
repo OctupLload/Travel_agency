@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="772540C8-1E0C-C15C-7AD7-57F405AA5018" name="tickets">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Information about tickets.]]></commentInRDBMS>
 <generatorID>5520E130-F193-58A7-00DD-D12D1DD58406</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
@@ -11,6 +12,7 @@
 <Column name="ticket_id" id="0F9C7993-509F-3037-E07E-372B0D42BF08">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ticket ID.]]></commentInRDBMS>
 <generatorID>2A9B8318-6E6A-B642-7CCB-ED857252CBC4</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -22,6 +24,7 @@
 <Column name="class_of_service" id="4AAD18DC-C717-3327-6D09-0440021C4307">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Class of service.]]></commentInRDBMS>
 <generatorID>C6C7DD3C-B8C3-D3D8-4461-DF02099EC3CF</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -34,8 +37,10 @@
 <Column name="flights_flight_id" id="50CEFC7F-3A38-1B84-070F-7C15E00C66B6">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Flight ID.]]></commentInRDBMS>
 <generatorID>C263FA6E-63F0-4F19-259D-A306ACFFC34F</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
@@ -47,7 +52,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="F59C55CB-90B4-7808-46BC-DCF1871E6998" name="tickets_PK">
+<ind_PK_UK id="F59C55CB-90B4-7808-46BC-DCF1871E6998" name="PK_tickets">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>6F0E16F6-DBCF-C0E7-72CA-477EB20BF876</generatorID>
@@ -59,7 +64,16 @@
 <colUsage columnID="0F9C7993-509F-3037-E07E-372B0D42BF08"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="A5FFBE10-9189-20C5-EF1E-2161D0FEE404" name="tickets_flights_FK">
+<ind_PK_UK id="4C8445EE-7DD8-062B-E56B-04CAFFE7832D" name="IDX_tickets">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-14 14:14:16 UTC</createdTime>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50CEFC7F-3A38-1B84-070F-7C15E00C66B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A5FFBE10-9189-20C5-EF1E-2161D0FEE404" name="FK_tickets_flights">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>EAE85E4C-C3C0-DE0E-3E34-17693A32A3A3</generatorID>

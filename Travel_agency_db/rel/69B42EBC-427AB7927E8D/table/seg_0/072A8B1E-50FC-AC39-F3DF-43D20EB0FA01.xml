@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="072A8B1E-50FC-AC39-F3DF-43D20EB0FA01" name="pass_cust">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Information about the number of customer passports.]]></commentInRDBMS>
 <generatorID>1C1F1D1F-6598-8E12-8D32-7E212622ECD3</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
@@ -11,8 +12,10 @@
 <Column name="customers_customer_id" id="658B2D56-FF9B-8C74-A27F-BEECBABD3378">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer ID.]]></commentInRDBMS>
 <generatorID>C6EB3DD1-A386-EC2A-C943-76BF0112BC6E</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
@@ -25,8 +28,10 @@
 <Column name="passports_passport_id" id="1E1F8F77-D656-2B63-9C6F-5FE9314D03BD">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passport ID.]]></commentInRDBMS>
 <generatorID>881407DA-EA87-77F2-4CB5-D2F60064B888</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
@@ -38,7 +43,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="85DF7B15-FC0D-D618-5BF1-336F3B1E4243" name="pass-cust_PK">
+<ind_PK_UK id="85DF7B15-FC0D-D618-5BF1-336F3B1E4243" name="PK_pass-cust">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>87812718-D471-BC8C-C22D-2DE2FC4CDDC7</generatorID>
@@ -51,7 +56,17 @@
 <colUsage columnID="1E1F8F77-D656-2B63-9C6F-5FE9314D03BD"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="7F25E32B-F5B8-7718-3F60-8CD97CA4AFD8" name="pass_cust_customers_FK">
+<ind_PK_UK id="6913CF36-7C58-85F7-747D-672A887F00A3" name="IDX_pass_cust">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-13 11:53:51 UTC</createdTime>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="658B2D56-FF9B-8C74-A27F-BEECBABD3378"/>
+<colUsage columnID="1E1F8F77-D656-2B63-9C6F-5FE9314D03BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7F25E32B-F5B8-7718-3F60-8CD97CA4AFD8" name="FK_pass_cust_customers">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>1F94863C-F6AA-C810-4429-B026B27C9AFE</generatorID>
@@ -62,7 +77,7 @@
 <colUsage columnID="658B2D56-FF9B-8C74-A27F-BEECBABD3378"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9948FA59-F798-6EF4-13C4-2DE92DC6280F" name="pass_cust_passports_FK">
+<ind_PK_UK id="9948FA59-F798-6EF4-13C4-2DE92DC6280F" name="FK_pass_cust_passports">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>29FEE756-9D5D-84B0-B3E6-17A723E07EF0</generatorID>

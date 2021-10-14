@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C6FDE983-33DB-EE3A-0E6E-DFD051755A8D" name="flights">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Information about flights.]]></commentInRDBMS>
 <generatorID>6B12B907-52E1-82BE-C402-364F751E5DE3</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
@@ -11,6 +12,7 @@
 <Column name="flight_id" id="D2B5BC6F-9093-AB88-D2EC-9CDBC37CD500">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Flight ID.]]></commentInRDBMS>
 <generatorID>F3E36879-2DCA-A1CD-8A3D-D36DC50282BF</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -22,6 +24,7 @@
 <Column name="departure_date" id="DA38599E-7FE3-7081-6FA3-14832ABD6411">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Departure date.]]></commentInRDBMS>
 <generatorID>C8943C49-896D-645A-FD14-F583B3C3D85A</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -33,6 +36,7 @@
 <Column name="departure_time" id="36DA6C08-E1F7-2C43-C6C3-D230E1F03E14">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Departure time.]]></commentInRDBMS>
 <generatorID>43C676EF-57BE-BE22-4CB9-825109F8B64D</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -44,6 +48,7 @@
 <Column name="airlines_airline_id" id="0017354E-BD7B-1428-721F-831AAC28937B">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Airline ID.]]></commentInRDBMS>
 <generatorID>C1BC2B19-3D34-D989-3413-27040B923B1A</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -58,7 +63,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="A96A3950-C93C-E84E-2557-3ACF257C5DC8" name="flights_PK">
+<ind_PK_UK id="A96A3950-C93C-E84E-2557-3ACF257C5DC8" name="PK_flights">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>F775B106-0E25-F830-01C0-432D9EE1CC63</generatorID>
@@ -70,7 +75,16 @@
 <colUsage columnID="D2B5BC6F-9093-AB88-D2EC-9CDBC37CD500"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9CE0E659-8D50-7F56-C7B5-98B9EAEDE9B1" name="flights_airlines_FK">
+<ind_PK_UK id="F6CA2C76-E7E4-83BD-489C-F15B7B842BC0" name="IDX_flights">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-14 14:13:15 UTC</createdTime>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0017354E-BD7B-1428-721F-831AAC28937B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9CE0E659-8D50-7F56-C7B5-98B9EAEDE9B1" name="FK_flights_airlines">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>CE21B60C-93B4-D159-D1BC-EA80F41FAA46</generatorID>

@@ -2,6 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F9D53027-045F-CA59-CA40-FAA30A792CA3" name="treaties">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 07:53:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[Information about treaties.]]></commentInRDBMS>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
@@ -18,6 +19,7 @@
 <Attribute name="treaty_id" id="501CDED3-E2C8-D250-FB75-41FC4DFA5A13">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 07:53:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Treaty ID.]]></commentInRDBMS>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
@@ -30,12 +32,14 @@
 <Attribute name="customer_id" id="BBD76021-B094-3598-B029-48C73C03257C">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 07:59:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer ID.]]></commentInRDBMS>
 <generatorID>956A9D15-44C5-5ED0-472B-B15F87B9599A</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
 </engineerTo>
 <referedAttribute>532D6E1C-D7B0-BFD9-19AC-800965A8BA7F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
@@ -43,12 +47,14 @@
 <Attribute name="employee_id" id="1D9A36E0-84F7-43E7-2CC1-01FA41C9EE61">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 07:59:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Employee ID.]]></commentInRDBMS>
 <generatorID>5A858F82-9832-5B5D-EA09-E01E3DDC36C5</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
 </engineerTo>
 <referedAttribute>8F3096F9-662B-202D-5EFB-83F65C37B85A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
@@ -56,25 +62,14 @@
 <Attribute name="tour_id" id="E93C8322-5A5A-2E38-7A1B-AB36350A1CF8">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 07:59:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tour ID.]]></commentInRDBMS>
 <generatorID>E9DD83E4-66B1-8901-127E-C5050F4EA572</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
 </engineerTo>
 <referedAttribute>0F3C543D-BAF8-E3F5-0070-B90B72269207</referedAttribute>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="operator_id" id="C6FB7EEC-D9E8-2DDD-9D22-65ABCFAD42C1">
-<createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 07:59:56 UTC</createdTime>
-<generatorID>E9DD83E4-66B1-8901-127E-C5050F4EA572</generatorID>
-<ownerDesignName>Travel_agency_db</ownerDesignName>
-<engineerTo>
-<item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
-</engineerTo>
-<referedAttribute>8A520BDA-050E-1A50-CD75-9B87D4D1864A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
@@ -82,19 +77,21 @@
 <Attribute name="ticket_id" id="ABF73F99-543A-E0EA-DE1D-B7809E864238">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 08:00:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ticket ID.]]></commentInRDBMS>
 <generatorID>704BD513-6178-7637-18DE-B538E7D01136</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
 </engineerTo>
 <referedAttribute>2A9B8318-6E6A-B642-7CCB-ED857252CBC4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="2CC4656A-0D5F-BB86-2EA5-838A7528F1FB" name="treaties PK">
+<identifier id="2CC4656A-0D5F-BB86-2EA5-838A7528F1FB" name="PK_treaties">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 07:53:58 UTC</createdTime>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
@@ -103,12 +100,8 @@
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="false"/>
 </engineerTo>
 <pk>true</pk>
+<newElementsIDs>501CDED3-E2C8-D250-FB75-41FC4DFA5A13</newElementsIDs>
 <usedAttributes>
-<attributeRef>BBD76021-B094-3598-B029-48C73C03257C</attributeRef>
-<attributeRef>1D9A36E0-84F7-43E7-2CC1-01FA41C9EE61</attributeRef>
-<attributeRef>E93C8322-5A5A-2E38-7A1B-AB36350A1CF8</attributeRef>
-<attributeRef>C6FB7EEC-D9E8-2DDD-9D22-65ABCFAD42C1</attributeRef>
-<attributeRef>ABF73F99-543A-E0EA-DE1D-B7809E864238</attributeRef>
 <attributeRef>501CDED3-E2C8-D250-FB75-41FC4DFA5A13</attributeRef>
 </usedAttributes>
 </identifier>

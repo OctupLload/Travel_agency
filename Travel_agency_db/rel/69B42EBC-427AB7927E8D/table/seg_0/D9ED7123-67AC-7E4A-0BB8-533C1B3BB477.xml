@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D9ED7123-67AC-7E4A-0BB8-533C1B3BB477" name="staff">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Information about staff.]]></commentInRDBMS>
 <generatorID>094D2D66-47D6-3B01-E960-824E8EEB281A</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
@@ -11,6 +12,7 @@
 <Column name="employee_id" id="BCE0A501-5B32-21CE-88E6-99DBDD028B13">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Employee ID.]]></commentInRDBMS>
 <generatorID>8F3096F9-662B-202D-5EFB-83F65C37B85A</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -22,6 +24,7 @@
 <Column name="last_name" id="E2D75A2D-4F8B-043D-BE8C-0B0A6DDF1001">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Last name.]]></commentInRDBMS>
 <generatorID>024DA93D-D7FA-A90C-C5A3-73D9C17B274A</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -34,6 +37,7 @@
 <Column name="first_name" id="00E98D14-F21B-704C-D3B9-E6B0FDF3D09D">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[First name.]]></commentInRDBMS>
 <generatorID>2B6496F8-0803-787D-781A-10694FE36795</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -46,6 +50,7 @@
 <Column name="surname" id="77A3E6AE-8F92-5A66-FB6B-CA4FD40FBCBD">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Surname]]></commentInRDBMS>
 <generatorID>19D47BF0-25D1-501C-96B9-BDE5C582E209</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -59,6 +64,7 @@
 <Column name="address" id="519985B6-E89A-B97F-2D20-5218015487B1">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Address.]]></commentInRDBMS>
 <generatorID>79A0F189-70F3-1516-7F1E-38B12FFD9F5E</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -71,18 +77,21 @@
 <Column name="phone_number" id="CB3BCE19-AB20-E7FD-E375-2677DB20020B">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Phone number.]]></commentInRDBMS>
 <generatorID>228D064B-C59F-EDE0-1D25-BF86CA318E18</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20</dataTypeSize>
+<domain>7B123705-F270-17E5-9AEA-6308EC62DF27</domain>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="positions_position_id" id="5098BE6C-262E-46C5-0194-27BFF2BF2ABD">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Position ID.]]></commentInRDBMS>
 <generatorID>1EF3436F-F1DB-CB6B-6DBE-2EE398DBF6E1</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -97,7 +106,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="ADC1133A-5554-FCE3-E416-858B7CB7550F" name="staff_PK">
+<ind_PK_UK id="ADC1133A-5554-FCE3-E416-858B7CB7550F" name="PK_staff">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>1CF739B3-FB40-633B-AC8D-E594AC776EE7</generatorID>
@@ -109,7 +118,16 @@
 <colUsage columnID="BCE0A501-5B32-21CE-88E6-99DBDD028B13"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="86A73958-D1B0-FED5-6823-B62DFCAF9A15" name="staff_positions_FK">
+<ind_PK_UK id="2C497035-AB19-FF4A-F8F4-3FDA2E222DC0" name="IDX_staff">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-14 14:12:05 UTC</createdTime>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5098BE6C-262E-46C5-0194-27BFF2BF2ABD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="86A73958-D1B0-FED5-6823-B62DFCAF9A15" name="FK_staff_positions">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>8DF3AC88-FCDE-FC74-48CE-16C7B8C8A961</generatorID>

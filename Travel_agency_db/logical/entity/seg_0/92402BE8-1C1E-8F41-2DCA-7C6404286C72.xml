@@ -1,7 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="92402BE8-1C1E-8F41-2DCA-7C6404286C72" name="t_operators">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="92402BE8-1C1E-8F41-2DCA-7C6404286C72" name="tr_operators">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-10 20:10:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Information about tour operators.]]></commentInRDBMS>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
@@ -18,6 +19,7 @@
 <Attribute name="operator_id" id="53FE5B23-0539-64CC-D68A-257895178746">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-10 20:48:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Operator ID.]]></commentInRDBMS>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
@@ -27,22 +29,24 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="title" id="60DF7434-B82E-7F65-E135-53E858891F81">
+<Attribute name="operator_name" id="60DF7434-B82E-7F65-E135-53E858891F81">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-10 20:48:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Title of the tour operator.]]></commentInRDBMS>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>40</dataTypeSize>
+<domain>39860CB7-E4A6-740D-49FF-4A416AA3789B</domain>
 <ownDataTypeParameters>40,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="84C6814B-CDF2-0A30-6E16-BB9C04D754BE" name="tour_operators_PK">
+<identifier id="84C6814B-CDF2-0A30-6E16-BB9C04D754BE" name="PK_tour_operators">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-10 20:48:49 UTC</createdTime>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
@@ -51,6 +55,7 @@
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="false"/>
 </engineerTo>
 <pk>true</pk>
+<newElementsIDs>53FE5B23-0539-64CC-D68A-257895178746</newElementsIDs>
 <usedAttributes>
 <attributeRef>53FE5B23-0539-64CC-D68A-257895178746</attributeRef>
 </usedAttributes>

@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="54BCFE6B-4395-B4FA-8C85-142432256680" name="passports">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Information about the passport data of customers.]]></commentInRDBMS>
 <generatorID>E3D4899E-440B-903F-9472-B2FCF7DDF3EA</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
@@ -11,6 +12,7 @@
 <Column name="passport_id" id="1C251C68-B000-2379-3381-591F8B80D359">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passport ID.]]></commentInRDBMS>
 <generatorID>814FCC60-E443-613B-528A-421294C76E8C</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -22,6 +24,7 @@
 <Column name="series" id="5F7549E3-A904-95FF-1B32-1C1A7ECA4484">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passport series.]]></commentInRDBMS>
 <generatorID>EBA6BBC1-388A-009B-4F2E-93D4B4B5B4E8</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -34,6 +37,7 @@
 <Column name="passport_num" id="31360F30-D645-6998-6411-602EA3E1E44E">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passport number.]]></commentInRDBMS>
 <generatorID>E59A08AA-BDEB-09A1-741C-16A7569D4776</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -46,6 +50,7 @@
 <Column name="issued_by" id="8EDD64BD-0839-DB6C-164C-E208BF8C688A">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passport is issued by (name of the authority).]]></commentInRDBMS>
 <generatorID>296C8B28-C0B0-1360-1EC2-7EB31D550A36</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -55,9 +60,10 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="date_of_ussue" id="849556DA-66AA-B6D0-4C62-98B4E4E1515A">
+<Column name="date_of_issue" id="849556DA-66AA-B6D0-4C62-98B4E4E1515A">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date of issue of the passport.]]></commentInRDBMS>
 <generatorID>A01D023A-6BF5-E4B7-02BD-6541B90462C3</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -68,7 +74,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="9E6D45BB-C87C-E17C-BA88-1486B881618D" name="passports_PK">
+<ind_PK_UK id="9E6D45BB-C87C-E17C-BA88-1486B881618D" name="PK_passports">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>ECBB8639-CCE0-40AE-CD97-DF21B9E3487A</generatorID>

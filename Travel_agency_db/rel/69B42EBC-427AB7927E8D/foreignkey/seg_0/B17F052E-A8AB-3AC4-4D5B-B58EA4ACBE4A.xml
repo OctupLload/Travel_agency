@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B17F052E-A8AB-3AC4-4D5B-B58EA4ACBE4A" containerWithKeyObject="CD2A4927-B428-7981-5DEC-40216C5552C5" localFKIndex="8E1B1ADC-3311-AE97-C7EC-E783E55D784A" name="treaties_staff_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B17F052E-A8AB-3AC4-4D5B-B58EA4ACBE4A" containerWithKeyObject="CD2A4927-B428-7981-5DEC-40216C5552C5" localFKIndex="8E1B1ADC-3311-AE97-C7EC-E783E55D784A" name="FK_treaties_staff">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>5A858F82-9832-5B5D-EA09-E01E3DDC36C5</generatorID>

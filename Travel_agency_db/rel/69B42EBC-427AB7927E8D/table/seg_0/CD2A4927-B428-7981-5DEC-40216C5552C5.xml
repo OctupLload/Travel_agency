@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CD2A4927-B428-7981-5DEC-40216C5552C5" name="treaties">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Information about treaties.]]></commentInRDBMS>
 <generatorID>F9D53027-045F-CA59-CA40-FAA30A792CA3</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
@@ -11,6 +12,7 @@
 <Column name="treaty_id" id="440563A0-3B87-0D55-8B1D-9D4661B5BF2A">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Treaty ID.]]></commentInRDBMS>
 <generatorID>501CDED3-E2C8-D250-FB75-41FC4DFA5A13</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -22,8 +24,10 @@
 <Column name="customers_customer_id" id="B714CEC2-E66F-F62D-FB7F-60A7B4F1BD4B">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer ID.]]></commentInRDBMS>
 <generatorID>BBD76021-B094-3598-B029-48C73C03257C</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
@@ -36,8 +40,10 @@
 <Column name="staff_employee_id" id="4B3DB5AA-199B-8438-6F81-D275C92F4A56">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Employee ID.]]></commentInRDBMS>
 <generatorID>1D9A36E0-84F7-43E7-2CC1-01FA41C9EE61</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
@@ -50,8 +56,10 @@
 <Column name="tours_tour_id" id="EB0480D9-E2C5-086D-DD0E-965B0735C854">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tour ID.]]></commentInRDBMS>
 <generatorID>E93C8322-5A5A-2E38-7A1B-AB36350A1CF8</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
@@ -61,25 +69,13 @@
 <colAssociation fkAssociation="51383CDB-682F-AB4E-47F2-F6857E6DA383" referredColumn="D8EBF1E4-A5F0-6A46-56F2-0CC716F6DEF6"/>
 </associations>
 </Column>
-<Column name="tours_t_operators_operator_id" id="235DB421-85E1-65BF-964D-FAC4009F6CC7">
-<createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 11:25:26 UTC</createdTime>
-<generatorID>C6FB7EEC-D9E8-2DDD-9D22-65ABCFAD42C1</generatorID>
-<ownerDesignName>Travel_agency_db</ownerDesignName>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="51383CDB-682F-AB4E-47F2-F6857E6DA383" referredColumn="7B50A4F5-A514-1A3B-6302-D73FD6E02285"/>
-</associations>
-</Column>
 <Column name="tickets_ticket_id" id="962C5497-84F5-B74C-4549-B238DEDF21BB">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ticket ID.]]></commentInRDBMS>
 <generatorID>ABF73F99-543A-E0EA-DE1D-B7809E864238</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
@@ -91,7 +87,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="89A8830D-9172-485D-E453-ACDE91D4386F" name="treaties_PK">
+<ind_PK_UK id="89A8830D-9172-485D-E453-ACDE91D4386F" name="PK_treaties">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>2CC4656A-0D5F-BB86-2EA5-838A7528F1FB</generatorID>
@@ -100,15 +96,22 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="B714CEC2-E66F-F62D-FB7F-60A7B4F1BD4B"/>
-<colUsage columnID="4B3DB5AA-199B-8438-6F81-D275C92F4A56"/>
-<colUsage columnID="EB0480D9-E2C5-086D-DD0E-965B0735C854"/>
-<colUsage columnID="235DB421-85E1-65BF-964D-FAC4009F6CC7"/>
-<colUsage columnID="962C5497-84F5-B74C-4549-B238DEDF21BB"/>
 <colUsage columnID="440563A0-3B87-0D55-8B1D-9D4661B5BF2A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9A74BF04-859D-1347-F6A1-D4D348AC8C8B" name="treaties_customers_FK">
+<ind_PK_UK id="8F8D6A6B-4E33-6807-A7DB-51A973CD3C45" name="IDX_treaties">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-14 14:15:22 UTC</createdTime>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B714CEC2-E66F-F62D-FB7F-60A7B4F1BD4B"/>
+<colUsage columnID="4B3DB5AA-199B-8438-6F81-D275C92F4A56"/>
+<colUsage columnID="EB0480D9-E2C5-086D-DD0E-965B0735C854"/>
+<colUsage columnID="962C5497-84F5-B74C-4549-B238DEDF21BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9A74BF04-859D-1347-F6A1-D4D348AC8C8B" name="FK_treaties_customers">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>956A9D15-44C5-5ED0-472B-B15F87B9599A</generatorID>
@@ -119,7 +122,7 @@
 <colUsage columnID="B714CEC2-E66F-F62D-FB7F-60A7B4F1BD4B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="C9B9923D-72F0-4FC4-6DA1-5F3B8DD6C040" name="treaties_tours_FK">
+<ind_PK_UK id="C9B9923D-72F0-4FC4-6DA1-5F3B8DD6C040" name="FK_treaties_tours">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>E9DD83E4-66B1-8901-127E-C5050F4EA572</generatorID>
@@ -128,10 +131,9 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="EB0480D9-E2C5-086D-DD0E-965B0735C854"/>
-<colUsage columnID="235DB421-85E1-65BF-964D-FAC4009F6CC7"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="8E1B1ADC-3311-AE97-C7EC-E783E55D784A" name="treaties_staff_FK">
+<ind_PK_UK id="8E1B1ADC-3311-AE97-C7EC-E783E55D784A" name="FK_treaties_staff">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>5A858F82-9832-5B5D-EA09-E01E3DDC36C5</generatorID>
@@ -142,7 +144,7 @@
 <colUsage columnID="4B3DB5AA-199B-8438-6F81-D275C92F4A56"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="FDED9DBA-DD2A-12C0-DC7C-9250BE2F7099" name="treaties_tickets_FK">
+<ind_PK_UK id="FDED9DBA-DD2A-12C0-DC7C-9250BE2F7099" name="FK_treaties_tickets">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>704BD513-6178-7637-18DE-B538E7D01136</generatorID>

@@ -2,6 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6B12B907-52E1-82BE-C402-364F751E5DE3" name="flights">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-10 20:11:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Information about flights.]]></commentInRDBMS>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
@@ -18,6 +19,7 @@
 <Attribute name="flight_id" id="F3E36879-2DCA-A1CD-8A3D-D36DC50282BF">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-10 20:52:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Flight ID.]]></commentInRDBMS>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
@@ -30,6 +32,7 @@
 <Attribute name="departure_date" id="C8943C49-896D-645A-FD14-F583B3C3D85A">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-10 20:52:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Departure date.]]></commentInRDBMS>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
@@ -42,6 +45,7 @@
 <Attribute name="departure_time" id="43C676EF-57BE-BE22-4CB9-825109F8B64D">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-10 20:56:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Departure time.]]></commentInRDBMS>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
@@ -54,6 +58,7 @@
 <Attribute name="airline_id" id="C1BC2B19-3D34-D989-3413-27040B923B1A">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-10 21:12:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Airline ID.]]></commentInRDBMS>
 <generatorID>CE21B60C-93B4-D159-D1BC-EA80F41FAA46</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <engineerTo>
@@ -67,7 +72,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="F775B106-0E25-F830-01C0-432D9EE1CC63" name="flights PK">
+<identifier id="F775B106-0E25-F830-01C0-432D9EE1CC63" name="PK_flights">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-10 20:52:43 UTC</createdTime>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
@@ -76,6 +81,7 @@
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="false"/>
 </engineerTo>
 <pk>true</pk>
+<newElementsIDs>F3E36879-2DCA-A1CD-8A3D-D36DC50282BF</newElementsIDs>
 <usedAttributes>
 <attributeRef>F3E36879-2DCA-A1CD-8A3D-D36DC50282BF</attributeRef>
 </usedAttributes>

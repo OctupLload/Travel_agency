@@ -2,6 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1C1F1D1F-6598-8E12-8D32-7E212622ECD3" name="pass_cust">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 10:32:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Information about the number of customer passports.]]></commentInRDBMS>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
@@ -18,34 +19,36 @@
 <Attribute name="customer_id" id="C6EB3DD1-A386-EC2A-C943-76BF0112BC6E">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 10:32:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer ID.]]></commentInRDBMS>
 <generatorID>1F94863C-F6AA-C810-4429-B026B27C9AFE</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
 </engineerTo>
 <referedAttribute>532D6E1C-D7B0-BFD9-19AC-800965A8BA7F</referedAttribute>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="passport_id" id="881407DA-EA87-77F2-4CB5-D2F60064B888">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 10:33:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passport ID.]]></commentInRDBMS>
 <generatorID>29FEE756-9D5D-84B0-B3E6-17A723E07EF0</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
 </engineerTo>
 <referedAttribute>814FCC60-E443-613B-528A-421294C76E8C</referedAttribute>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<domain>6AECABD6-8B32-BA31-E576-4426A7FF1E8F</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="87812718-D471-BC8C-C22D-2DE2FC4CDDC7" name="passports-customers PK">
+<identifier id="87812718-D471-BC8C-C22D-2DE2FC4CDDC7" name="PK_pass_cust">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 10:32:32 UTC</createdTime>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
@@ -54,6 +57,7 @@
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="false"/>
 </engineerTo>
 <pk>true</pk>
+<newElementsIDs>C6EB3DD1-A386-EC2A-C943-76BF0112BC6E,881407DA-EA87-77F2-4CB5-D2F60064B888</newElementsIDs>
 <usedAttributes>
 <attributeRef>C6EB3DD1-A386-EC2A-C943-76BF0112BC6E</attributeRef>
 <attributeRef>881407DA-EA87-77F2-4CB5-D2F60064B888</attributeRef>

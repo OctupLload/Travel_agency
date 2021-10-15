@@ -34,7 +34,7 @@
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="flights_flight_id" id="50CEFC7F-3A38-1B84-070F-7C15E00C66B6">
+<Column name="flight_id" id="50CEFC7F-3A38-1B84-070F-7C15E00C66B6">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <commentInRDBMS><![CDATA[Flight ID.]]></commentInRDBMS>

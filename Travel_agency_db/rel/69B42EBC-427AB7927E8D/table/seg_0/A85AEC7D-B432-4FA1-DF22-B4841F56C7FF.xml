@@ -61,7 +61,7 @@
 <ownDataTypeParameters>,15,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="tr_operators_operator_id" id="7B50A4F5-A514-1A3B-6302-D73FD6E02285">
+<Column name="operator_id" id="7B50A4F5-A514-1A3B-6302-D73FD6E02285">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <commentInRDBMS><![CDATA[Operator ID.]]></commentInRDBMS>
@@ -77,7 +77,7 @@
 <colAssociation fkAssociation="B7DC551F-5196-BC1E-D728-42F7C88C5200" referredColumn="2BD4BED7-FBC0-2733-ECCF-562A874688EC"/>
 </associations>
 </Column>
-<Column name="hotels_hotel_id" id="B06CA105-45D5-5C3F-A6E6-C449C6965761">
+<Column name="hotel_id" id="B06CA105-45D5-5C3F-A6E6-C449C6965761">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <commentInRDBMS><![CDATA[Hotel ID.]]></commentInRDBMS>

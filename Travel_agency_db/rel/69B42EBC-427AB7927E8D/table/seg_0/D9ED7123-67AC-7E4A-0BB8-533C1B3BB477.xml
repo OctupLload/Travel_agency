@@ -88,7 +88,7 @@
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="positions_position_id" id="5098BE6C-262E-46C5-0194-27BFF2BF2ABD">
+<Column name="position_id" id="5098BE6C-262E-46C5-0194-27BFF2BF2ABD">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <commentInRDBMS><![CDATA[Position ID.]]></commentInRDBMS>

@@ -9,7 +9,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="customers_customer_id" id="658B2D56-FF9B-8C74-A27F-BEECBABD3378">
+<Column name="customer_id" id="658B2D56-FF9B-8C74-A27F-BEECBABD3378">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <commentInRDBMS><![CDATA[Customer ID.]]></commentInRDBMS>
@@ -25,7 +25,7 @@
 <colAssociation fkAssociation="A1C8C136-AC52-0AB5-EC41-3070C555AE46" referredColumn="D72C70DB-6C63-CDB6-4CB3-474A764D4B7F"/>
 </associations>
 </Column>
-<Column name="passports_passport_id" id="1E1F8F77-D656-2B63-9C6F-5FE9314D03BD">
+<Column name="passport_id" id="1E1F8F77-D656-2B63-9C6F-5FE9314D03BD">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <commentInRDBMS><![CDATA[Passport ID.]]></commentInRDBMS>
@@ -43,7 +43,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="85DF7B15-FC0D-D618-5BF1-336F3B1E4243" name="PK_pass-cust">
+<ind_PK_UK id="85DF7B15-FC0D-D618-5BF1-336F3B1E4243" name="PK_pass_cust">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <generatorID>87812718-D471-BC8C-C22D-2DE2FC4CDDC7</generatorID>

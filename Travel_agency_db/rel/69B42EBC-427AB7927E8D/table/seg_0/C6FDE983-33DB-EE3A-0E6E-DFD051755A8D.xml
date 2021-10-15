@@ -45,7 +45,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="airlines_airline_id" id="0017354E-BD7B-1428-721F-831AAC28937B">
+<Column name="airline_id" id="0017354E-BD7B-1428-721F-831AAC28937B">
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-11 11:25:26 UTC</createdTime>
 <commentInRDBMS><![CDATA[Airline ID.]]></commentInRDBMS>

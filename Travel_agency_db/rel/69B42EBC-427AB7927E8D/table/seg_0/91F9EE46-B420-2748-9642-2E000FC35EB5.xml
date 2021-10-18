@@ -1,19 +1,19 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="18C9344C-D6CC-D51C-A5E7-447BBA377CF8" name="positions">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="91F9EE46-B420-2748-9642-2E000FC35EB5" name="tr_operators">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 11:25:26 UTC</createdTime>
-<commentInRDBMS><![CDATA[Information about positions.]]></commentInRDBMS>
-<generatorID>4317E38C-095B-195F-EC3B-6F1233DC80E4</generatorID>
+<createdTime>2021-10-18 15:10:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Information about tour operators.]]></commentInRDBMS>
+<generatorID>92402BE8-1C1E-8F41-2DCA-7C6404286C72</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="position_id" id="DE67ECA3-F4F0-A9FE-6901-4B6C284C921C">
+<Column name="operator_id" id="FFA0965E-7C75-EA51-9218-8543E671FA6D">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 11:25:26 UTC</createdTime>
-<commentInRDBMS><![CDATA[Position ID.]]></commentInRDBMS>
-<generatorID>77F18F77-633E-191C-661D-12DA2076D4D7</generatorID>
+<createdTime>2021-10-18 15:10:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Operator ID.]]></commentInRDBMS>
+<generatorID>53FE5B23-0539-64CC-D68A-257895178746</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -21,31 +21,32 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="position_name" id="D2110EBF-E660-0031-4F1C-D32183F12F0C">
+<Column name="operator_name" id="6B4EB3F3-32D2-30F1-228A-16C48063BCE1">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 11:25:26 UTC</createdTime>
-<commentInRDBMS><![CDATA[Title of the position.]]></commentInRDBMS>
-<generatorID>D8537C3F-D75F-51F9-C047-858AD27FE8F9</generatorID>
+<createdTime>2021-10-18 15:10:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Title of the tour operator.]]></commentInRDBMS>
+<generatorID>60DF7434-B82E-7F65-E135-53E858891F81</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>150</dataTypeSize>
-<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<dataTypeSize>40</dataTypeSize>
+<domain>39860CB7-E4A6-740D-49FF-4A416AA3789B</domain>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="A5FE5A7F-ED7A-0E35-B897-74906E7AAB8F" name="PK_positions">
+<ind_PK_UK id="4486ABCE-9EF2-C769-E5F8-C82444182120" name="PK_tr_operators">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 11:25:26 UTC</createdTime>
-<generatorID>4E7CCF70-ADC7-EF57-D8EF-A9441F819DDF</generatorID>
+<createdTime>2021-10-18 15:10:10 UTC</createdTime>
+<generatorID>84C6814B-CDF2-0A30-6E16-BB9C04D754BE</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="DE67ECA3-F4F0-A9FE-6901-4B6C284C921C"/>
+<colUsage columnID="FFA0965E-7C75-EA51-9218-8543E671FA6D"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

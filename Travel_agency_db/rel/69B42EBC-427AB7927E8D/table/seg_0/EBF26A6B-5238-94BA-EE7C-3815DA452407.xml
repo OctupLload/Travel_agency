@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="772540C8-1E0C-C15C-7AD7-57F405AA5018" name="tickets">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EBF26A6B-5238-94BA-EE7C-3815DA452407" name="tickets">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<createdTime>2021-10-18 15:10:10 UTC</createdTime>
 <commentInRDBMS><![CDATA[Information about tickets.]]></commentInRDBMS>
 <generatorID>5520E130-F193-58A7-00DD-D12D1DD58406</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
@@ -9,9 +9,9 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ticket_id" id="0F9C7993-509F-3037-E07E-372B0D42BF08">
+<Column name="ticket_id" id="7BBA8994-C0EF-8C0B-9527-CBEE055093C4">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<createdTime>2021-10-18 15:10:10 UTC</createdTime>
 <commentInRDBMS><![CDATA[Ticket ID.]]></commentInRDBMS>
 <generatorID>2A9B8318-6E6A-B642-7CCB-ED857252CBC4</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
@@ -21,9 +21,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="class_of_service" id="4AAD18DC-C717-3327-6D09-0440021C4307">
+<Column name="class_of_service" id="5BD89AE8-C88C-E339-28ED-B5F3A2015AA0">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<createdTime>2021-10-18 15:10:10 UTC</createdTime>
 <commentInRDBMS><![CDATA[Class of service.]]></commentInRDBMS>
 <generatorID>C6C7DD3C-B8C3-D3D8-4461-DF02099EC3CF</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
@@ -34,9 +34,9 @@
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="flight_id" id="50CEFC7F-3A38-1B84-070F-7C15E00C66B6">
+<Column name="flight_id" id="603F8BB3-E65C-2C55-AD34-1C9C5129AC90">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<createdTime>2021-10-18 15:10:10 UTC</createdTime>
 <commentInRDBMS><![CDATA[Flight ID.]]></commentInRDBMS>
 <generatorID>C263FA6E-63F0-4F19-259D-A306ACFFC34F</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
@@ -47,41 +47,42 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="26C98D03-4491-DA39-890D-D899F3BEACD8" referredColumn="D2B5BC6F-9093-AB88-D2EC-9CDBC37CD500"/>
+<colAssociation fkAssociation="3D70ED16-9E47-9E81-A4BD-A47C223B869B" referredColumn="6888E95E-6EE5-21D8-881C-2E3A85DD3B8A"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="F59C55CB-90B4-7808-46BC-DCF1871E6998" name="PK_tickets">
+<ind_PK_UK id="87192E24-DE61-F7CF-A8C8-4AF8B3B53449" name="PK_tickets">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<createdTime>2021-10-18 15:10:10 UTC</createdTime>
 <generatorID>6F0E16F6-DBCF-C0E7-72CA-477EB20BF876</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="0F9C7993-509F-3037-E07E-372B0D42BF08"/>
+<colUsage columnID="7BBA8994-C0EF-8C0B-9527-CBEE055093C4"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="4C8445EE-7DD8-062B-E56B-04CAFFE7832D" name="IDX_tickets">
+<ind_PK_UK id="D4E49FEE-5DC4-9C14-4350-005272916E2C" name="IDX_flight_id">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-14 14:14:16 UTC</createdTime>
+<createdTime>2021-10-18 15:37:13 UTC</createdTime>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="50CEFC7F-3A38-1B84-070F-7C15E00C66B6"/>
+<colUsage columnID="603F8BB3-E65C-2C55-AD34-1C9C5129AC90"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="A5FFBE10-9189-20C5-EF1E-2161D0FEE404" name="FK_tickets_flights">
+<ind_PK_UK id="65DAEE7D-1BC2-2875-728E-F27B8C1DD482" name="FK_tickets_flights">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<createdTime>2021-10-18 15:10:10 UTC</createdTime>
 <generatorID>EAE85E4C-C3C0-DE0E-3E34-17693A32A3A3</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="50CEFC7F-3A38-1B84-070F-7C15E00C66B6"/>
+<colUsage columnID="603F8BB3-E65C-2C55-AD34-1C9C5129AC90"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

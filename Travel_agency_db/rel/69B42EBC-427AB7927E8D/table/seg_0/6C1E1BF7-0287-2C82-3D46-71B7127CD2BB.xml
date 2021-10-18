@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6C1E1BF7-0287-2C82-3D46-71B7127CD2BB" name="pass_cust">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-18 15:10:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Information about the number of customer passports.]]></commentInRDBMS>
+<generatorID>1C1F1D1F-6598-8E12-8D32-7E212622ECD3</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pass_cust_id" id="7EB23F71-B299-9906-FEB1-E1749CE3DF0E">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-18 15:27:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[passports customers id]]></commentInRDBMS>
+<generatorID>E6ED9B61-5FD2-AE37-1F56-40BF43518D79</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customer_id" id="B123CB93-F701-BE58-1112-C9D049112324">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-18 15:10:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer ID.]]></commentInRDBMS>
+<generatorID>B26D3E16-6236-DD3E-7EE7-77A1B713F3E7</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C9F10CA0-7412-739A-B364-6DC1E59C9515" referredColumn="73301076-F32D-8EE2-CC9F-A6A0012FE320"/>
+</associations>
+</Column>
+<Column name="passport_id" id="2546604B-1C8A-8563-D716-97E0CF5F8A00">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-18 15:10:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passport ID.]]></commentInRDBMS>
+<generatorID>0D9DE07C-E3E4-D2A1-7D65-F2F1CC619C99</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E8412251-5EE1-6B2D-C4AB-EF1F78D35C46" referredColumn="A1F1541A-34B9-385C-D62B-04E53B23C4F6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="954021BC-1A39-F749-5E0C-7B653AA6116D" name="PK_pass_cust">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-18 15:27:00 UTC</createdTime>
+<generatorID>FBEFE2E2-0EA0-0FFB-3A4F-51D7B2E90CA3</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EB23F71-B299-9906-FEB1-E1749CE3DF0E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F375F99A-9717-3C5B-DCB9-0BDAEE9CBA32" name="IDX_customer_id">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-18 15:13:18 UTC</createdTime>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B123CB93-F701-BE58-1112-C9D049112324"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="26BCEBB1-FC19-DF13-8AC5-F3F507D7D8E9" name="IDX_passport_id">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-18 15:13:18 UTC</createdTime>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2546604B-1C8A-8563-D716-97E0CF5F8A00"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FFA8BCD3-4A02-B50D-E972-ADF2EBBE39F2" name="FK_pass_cust_customers">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-18 15:10:10 UTC</createdTime>
+<generatorID>0098FCFC-8B2D-6708-A688-F33F73C436B4</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B123CB93-F701-BE58-1112-C9D049112324"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CB20A920-DAB1-7237-A2D8-FEC090E48944" name="FK_pass_cust_passports">
+<createdBy>Пользователь</createdBy>
+<createdTime>2021-10-18 15:10:10 UTC</createdTime>
+<generatorID>09A304CC-3438-32A8-D162-05075AB60797</generatorID>
+<ownerDesignName>Travel_agency_db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2546604B-1C8A-8563-D716-97E0CF5F8A00"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B9BBF829-8C33-05EE-322C-2166818DF345" name="customers">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9841A601-6BE9-2C45-7DB9-77373FC21038" name="customers">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<createdTime>2021-10-18 15:10:10 UTC</createdTime>
 <commentInRDBMS><![CDATA[Information about customers.]]></commentInRDBMS>
 <generatorID>F1CA1A7D-541E-94A5-F194-BEB5D386FF65</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
@@ -9,9 +9,9 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="customer_id" id="D72C70DB-6C63-CDB6-4CB3-474A764D4B7F">
+<Column name="customer_id" id="73301076-F32D-8EE2-CC9F-A6A0012FE320">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<createdTime>2021-10-18 15:10:10 UTC</createdTime>
 <commentInRDBMS><![CDATA[Customer ID.]]></commentInRDBMS>
 <generatorID>532D6E1C-D7B0-BFD9-19AC-800965A8BA7F</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
@@ -21,49 +21,52 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="last_name" id="319E88DF-360B-E074-5868-01724B8EC4E5">
+<Column name="last_name" id="5CB80DD2-7C54-E491-6933-BC8681EE949D">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<createdTime>2021-10-18 15:10:10 UTC</createdTime>
 <commentInRDBMS><![CDATA[Last name.]]></commentInRDBMS>
 <generatorID>26D2BD5B-F71C-C45A-4951-A583748420BC</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>40</dataTypeSize>
+<domain>4F13532D-F132-C98A-18D5-5446BD080721</domain>
 <ownDataTypeParameters>40,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="first_name" id="94F13355-329F-5A94-EEA3-A577792068BC">
+<Column name="first_name" id="135362D9-0FBF-0275-6C3C-004278889CF3">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<createdTime>2021-10-18 15:10:10 UTC</createdTime>
 <commentInRDBMS><![CDATA[First name.]]></commentInRDBMS>
 <generatorID>1F31F994-8F8A-51F8-8D98-E04031A02BB0</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>40</dataTypeSize>
+<domain>4F13532D-F132-C98A-18D5-5446BD080721</domain>
 <ownDataTypeParameters>40,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="surname" id="2BF46E0A-B8BD-5897-46FB-DE55EDEB4735">
+<Column name="surname" id="18C09539-A430-5DE2-A607-D19B6C46EB05">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<createdTime>2021-10-18 15:10:10 UTC</createdTime>
 <commentInRDBMS><![CDATA[Surname.]]></commentInRDBMS>
 <generatorID>594FEEA1-95A0-BEED-1F4D-E31E978D0CCD</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>40</dataTypeSize>
+<domain>4F13532D-F132-C98A-18D5-5446BD080721</domain>
 <ownDataTypeParameters>40,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="birthdate" id="459E5F3F-64B2-12CD-D2AB-7731017E5F05">
+<Column name="birthdate" id="979712A4-1286-A446-1930-1A8E3AB38BD5">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<createdTime>2021-10-18 15:10:10 UTC</createdTime>
 <commentInRDBMS><![CDATA[Birthdate.]]></commentInRDBMS>
 <generatorID>FA6D0BFA-7956-875A-F7D3-53D2D177EA23</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
@@ -73,31 +76,32 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="phone_number" id="A8AFE4D1-FE1F-F979-8688-7AFF051FA75C">
+<Column name="phone_number" id="18C2EA94-1265-EEEB-D5A3-56D14B67273C">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<createdTime>2021-10-18 15:10:10 UTC</createdTime>
 <commentInRDBMS><![CDATA[Phone number.]]></commentInRDBMS>
 <generatorID>E18AE2A4-9E3F-6B8A-A7E2-BDD8D6E55262</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>15</dataTypeSize>
+<domain>7B123705-F270-17E5-9AEA-6308EC62DF27</domain>
 <ownDataTypeParameters>15,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="33236964-0C48-54B3-2A7E-1B76044EA56D" name="PK_customers">
+<ind_PK_UK id="0BD52F70-B1C4-281F-5A0B-DF570E5CF405" name="PK_customers">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 11:25:26 UTC</createdTime>
+<createdTime>2021-10-18 15:10:10 UTC</createdTime>
 <generatorID>1903FE30-3272-1C04-B734-2B0D43DA8DF3</generatorID>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="D72C70DB-6C63-CDB6-4CB3-474A764D4B7F"/>
+<colUsage columnID="73301076-F32D-8EE2-CC9F-A6A0012FE320"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

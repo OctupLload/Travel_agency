@@ -1,17 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="passports-to-passports-customers" directorySegmentName="seg_0" id="29FEE756-9D5D-84B0-B3E6-17A723E07EF0">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="customer_to_pass_cust" directorySegmentName="seg_0" id="0098FCFC-8B2D-6708-A688-F33F73C436B4">
 <createdBy>Пользователь</createdBy>
-<createdTime>2021-10-11 10:33:17 UTC</createdTime>
+<createdTime>2021-10-18 13:59:12 UTC</createdTime>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
 <engineerTo>
 <item key="69B42EBC-C32F-7459-9106-427AB7927E8D" value="true"/>
 </engineerTo>
-<sourcePk>ECBB8639-CCE0-40AE-CD97-DF21B9E3487A</sourcePk>
-<identifying>true</identifying>
+<sourcePk>1903FE30-3272-1C04-B734-2B0D43DA8DF3</sourcePk>
+<identifying>false</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
-<sourceEntity>E3D4899E-440B-903F-9472-B2FCF7DDF3EA</sourceEntity>
+<sourceEntity>F1CA1A7D-541E-94A5-F194-BEB5D386FF65</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
 <targetEntity>1C1F1D1F-6598-8E12-8D32-7E212622ECD3</targetEntity>
 <transferable>true</transferable>

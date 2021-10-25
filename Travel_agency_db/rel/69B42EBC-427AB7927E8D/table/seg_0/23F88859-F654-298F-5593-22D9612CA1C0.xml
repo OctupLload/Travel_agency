@@ -103,7 +103,6 @@
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-18 15:40:52 UTC</createdTime>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
-<indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="07651F66-3F41-0F48-2FDE-84A10CA06169"/>
@@ -113,7 +112,6 @@
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-18 15:40:52 UTC</createdTime>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
-<indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="07B753B7-01AD-69C2-50AD-2746EF07D02A"/>
@@ -123,7 +121,6 @@
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-18 15:40:52 UTC</createdTime>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
-<indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="669E12E2-A001-77A5-FD92-C47D9F7FC7C7"/>
@@ -133,7 +130,6 @@
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-18 15:40:52 UTC</createdTime>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
-<indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="003A1209-E538-10F3-1D2D-B71AC892805E"/>

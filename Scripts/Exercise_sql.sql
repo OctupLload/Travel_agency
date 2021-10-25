@@ -375,35 +375,35 @@ INSERT INTO airlines(airline_id, airline_name) VALUES(airlines_seq.NEXTVAL, 'Aer
 --For flights table
 INSERT INTO flights(flight_id, departure_date, departure_time, airline_id)
     VALUES(flights_seq.NEXTVAL, TO_DATE('12.05.2021','DD.MM.YYYY'),
-        TO_TIMESTAMP('12.05.2021 12:15:30', 'dd.mm.yyyy hh24:mi:ss'), 1);
+        TO_DATE('12.05.2021 12:15:30', 'dd.mm.yyyy hh24:mi:ss'), 1);
         
 INSERT INTO flights(flight_id, departure_date, departure_time, airline_id)
     VALUES(flights_seq.NEXTVAL, TO_DATE('12.05.2021','dd.mm.yyyy'),
-        TO_TIMESTAMP('12.05.2021 12:30:30', 'dd.mm.yyyy hh24:mi:ss'), 2);
+        TO_DATE('12.05.2021 12:30:30', 'dd.mm.yyyy hh24:mi:ss'), 2);
         
 INSERT INTO flights(flight_id, departure_date, departure_time, airline_id)
     VALUES(flights_seq.NEXTVAL, TO_DATE('12.05.2021','dd.mm.yyyy'), 
-        TO_TIMESTAMP('12.05.2021 13:10:00', 'dd.mm.yyyy hh24:mi:ss'), 3);
+        TO_DATE('12.05.2021 13:10:00', 'dd.mm.yyyy hh24:mi:ss'), 3);
         
 INSERT INTO flights(flight_id, departure_date, departure_time, airline_id)
     VALUES(flights_seq.NEXTVAL, TO_DATE('12.05.2021','dd.mm.yyyy'), 
-        TO_TIMESTAMP('12.05.2021 13:35:00', 'dd.mm.yyyy hh24:mi:ss'), 4);
+        TO_DATE('12.05.2021 13:35:00', 'dd.mm.yyyy hh24:mi:ss'), 4);
         
 INSERT INTO flights(flight_id, departure_date, departure_time, airline_id)
     VALUES(flights_seq.NEXTVAL, TO_DATE('13.05.2021','dd.mm.yyyy'),
-        TO_TIMESTAMP('12.05.2021 13:50:00', 'dd.mm.yyyy hh24:mi:ss'), 5);
+        TO_DATE('13.05.2021 13:50:00', 'dd.mm.yyyy hh24:mi:ss'), 5);
         
 INSERT INTO flights(flight_id, departure_date, departure_time, airline_id)
     VALUES(flights_seq.NEXTVAL, TO_DATE('13.05.2021','dd.mm.yyyy'),
-        TO_TIMESTAMP('12.05.2021 14:25:00', 'dd.mm.yyyy hh24:mi:ss'), 6);
+        TO_DATE('13.05.2021 14:25:00', 'dd.mm.yyyy hh24:mi:ss'), 6);
         
 INSERT INTO flights(flight_id, departure_date, departure_time, airline_id)
     VALUES(flights_seq.NEXTVAL, TO_DATE('13.05.2021','dd.mm.yyyy'),
-        TO_TIMESTAMP('12.05.2021 15:10:00', 'dd.mm.yyyy hh24:mi:ss'), 7);
+        TO_DATE('13.05.2021 15:10:00', 'dd.mm.yyyy hh24:mi:ss'), 7);
         
 INSERT INTO flights(flight_id, departure_date, departure_time, airline_id)
     VALUES(flights_seq.NEXTVAL, TO_DATE('13.05.2021','dd.mm.yyyy'),
-        TO_TIMESTAMP('12.05.2021 15:50:00', 'dd.mm.yyyy hh24:mi:ss'), 8);
+        TO_DATE('12.05.2021 15:50:00', 'dd.mm.yyyy hh24:mi:ss'), 8);
 
 --For tickets table
 INSERT INTO tickets(ticket_id, class_of_service, flight_id)

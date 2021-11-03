@@ -18,6 +18,7 @@ CREATE OR REPLACE PACKAGE BODY pkg_passports AS
                                 p_new_passport_num IN passports.passport_num%TYPE,
                                 p_new_issued_by IN passports.issued_by%TYPE,
                                 p_new_date_of_issue IN passports.date_of_issue%TYPE) IS
+        v_ins_passport_id passports.passport_id%TYPE;
         null_err EXCEPTION;
     BEGIN
         IF (p_new_series IS NOT NULL AND
@@ -25,9 +26,10 @@ CREATE OR REPLACE PACKAGE BODY pkg_passports AS
             p_new_issued_by IS NOT NULL AND 
             p_new_date_of_issue IS NOT NULL)THEN
             INSERT INTO passports(series, passport_num, issued_by, date_of_issue)
-                VALUES(p_new_series, p_new_passport_num, p_new_issued_by, p_new_date_of_issue);
+                VALUES(p_new_series, p_new_passport_num, p_new_issued_by, p_new_date_of_issue)
+                RETURNING passport_id INTO v_ins_passport_id;
             COMMIT;
-            DBMS_OUTPUT.put_line(SQLCODE()||': Record inserted successfully');
+            DBMS_OUTPUT.put_line(SQLCODE()||': Record inserted successfully. Record id = ' || v_ins_passport_id);
         ELSE 
             RAISE null_err;
         END IF;

@@ -9,13 +9,15 @@ END pkg_positions;
 
 CREATE OR REPLACE PACKAGE BODY pkg_positions AS
     PROCEDURE p_create_position(p_new_position_name IN positions.position_name%TYPE) IS
+        v_ins_position_id positions.position_id%TYPE;
         null_err EXCEPTION;
     BEGIN
         IF p_new_position_name IS NOT NULL THEN
             INSERT INTO positions(position_name)
-                VALUES(p_new_position_name);
+                VALUES(p_new_position_name)
+                RETURNING position_id INTO v_ins_position_id;
             COMMIT;
-            DBMS_OUTPUT.put_line(SQLCODE()||': Record inserted successfully');
+            DBMS_OUTPUT.put_line(SQLCODE()||': Record inserted successfully. Record id = ' || v_ins_position_id);
         ELSE 
             RAISE null_err;
         END IF;

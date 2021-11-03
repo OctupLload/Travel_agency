@@ -9,13 +9,15 @@ END pkg_airlines;
 
 CREATE OR REPLACE PACKAGE BODY pkg_airlines AS
     PROCEDURE p_create_airline (p_new_airline_name IN airlines.airline_name%TYPE) IS
+        v_ins_airline_id airlines.airline_id%TYPE;
         null_err EXCEPTION;
     BEGIN
         IF p_new_airline_name IS NOT NULL THEN
             INSERT INTO airlines(airline_name)
-                VALUES(p_new_airline_name);
+                VALUES(p_new_airline_name)
+                RETURNING airline_id INTO v_ins_airline_id;
             COMMIT;
-            DBMS_OUTPUT.put_line(SQLCODE()||': Record inserted successfully');
+            DBMS_OUTPUT.put_line(SQLCODE()||': Record inserted successfully. Record id = ' || v_ins_airline_id);
         ELSE 
             RAISE null_err;
         END IF;

@@ -24,6 +24,7 @@ CREATE OR REPLACE PACKAGE BODY pkg_staff AS
                                 p_new_address IN staff.address%TYPE,
                                 p_new_phone_number IN staff.phone_number%TYPE,
                                 p_new_position_id IN staff.position_id%TYPE) IS
+        v_ins_employee_id staff.employee_id%TYPE;
         v_count_position INTEGER;
         integrity_err EXCEPTION;
         null_err EXCEPTION;
@@ -42,10 +43,11 @@ CREATE OR REPLACE PACKAGE BODY pkg_staff AS
             IF (v_count_position >= 1) THEN
                 INSERT INTO staff(last_name, first_name, surname,
                                   address, phone_number, position_id)
-                VALUES(p_new_last_name, p_new_first_name, p_new_surname,
-                       p_new_address, p_new_phone_number, p_new_position_id);
+                    VALUES(p_new_last_name, p_new_first_name, p_new_surname,
+                           p_new_address, p_new_phone_number, p_new_position_id)
+                    RETURNING employee_id INTO v_ins_employee_id;
                 COMMIT;
-                DBMS_OUTPUT.put_line(SQLCODE()||': Record inserted successfully'); 
+                DBMS_OUTPUT.put_line(SQLCODE()||': Record inserted successfully. Record id = ' || v_ins_employee_id); 
             ELSE
                 RAISE integrity_err;
             END IF;

@@ -21,6 +21,7 @@ CREATE OR REPLACE PACKAGE BODY pkg_customers AS
                                 p_new_surname IN customers.surname%TYPE,
                                 p_new_birthdate IN customers.birthdate%TYPE,
                                 p_new_phone_number IN customers.phone_number%TYPE) IS
+        v_ins_customer_id customers.customer_id%TYPE;
         null_err EXCEPTION;
     BEGIN
         IF (p_new_last_name IS NOT NULL OR
@@ -37,9 +38,10 @@ CREATE OR REPLACE PACKAGE BODY pkg_customers AS
                        p_new_first_name,
                        p_new_surname,
                        p_new_birhdate,
-                       p_new_phone_number);
+                       p_new_phone_number)
+                RETURNING customer_id INTO v_ins_customer_id;
             COMMIT;
-            DBMS_OUTPUT.put_line(SQLCODE()||': Record inserted successfully');
+            DBMS_OUTPUT.put_line(SQLCODE()||': Record inserted successfully. Record id = ' || v_ins_customer_id);
         ELSE 
             RAISE null_err;
         END IF;

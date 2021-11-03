@@ -1,4 +1,4 @@
---In this package has pipelined function on line 178
+--In this package has pipelined function on line 177
 --Pipelined function returns record from view named v_inf_tour
 
 CREATE OR REPLACE PACKAGE pkg_tours AS 
@@ -33,6 +33,7 @@ CREATE OR REPLACE PACKAGE BODY pkg_tours AS
                             p_new_cost IN tours.cost%TYPE,
                             p_new_operator_id IN tours.operator_id%TYPE,
                             p_new_hotel_id IN tours.hotel_id%TYPE) IS
+        v_ins_tour_id tours.tour_id%TYPE;
         v_count_operator INTEGER;
         v_count_hotel INTEGER;
         integrity_err EXCEPTION;
@@ -55,9 +56,10 @@ CREATE OR REPLACE PACKAGE BODY pkg_tours AS
             p_new_hotel_id IS NOT NULL) THEN
             IF(v_count_operator >= 1 AND v_count_hotel >=1) THEN
                 INSERT INTO tours(country, city, cost, operator_id, hotel_id)
-                VALUES(p_new_country, p_new_city, p_new_cost, p_new_operator_id, p_new_hotel_id);
+                VALUES(p_new_country, p_new_city, p_new_cost, p_new_operator_id, p_new_hotel_id)
+                RETURNING tour_id INTO v_ins_tour_id;
                 COMMIT;
-                DBMS_OUTPUT.put_line(SQLCODE()||': Record inserted successfully'); 
+                DBMS_OUTPUT.put_line(SQLCODE()||': Record inserted successfully. Record id = '|| v_ins_tour_id); 
             ELSE
                 RAISE integrity_err;
             END IF;
@@ -69,7 +71,7 @@ CREATE OR REPLACE PACKAGE BODY pkg_tours AS
             DBMS_OUTPUT.put_line(SQLCODE()||': The value is NULL. Enter the correct value');
         WHEN integrity_err THEN
             DBMS_OUTPUT.put_line(SQLCODE()||': There are no necessary entries in the tables of  
-                                  Customers and Passports.');
+                                  Hotels and Tr_operators.');
         WHEN OTHERS THEN 
             DBMS_OUTPUT.put_line(SQLCODE || ': ' || SQLERRM);
     END p_create_tour;
@@ -152,7 +154,7 @@ CREATE OR REPLACE PACKAGE BODY pkg_tours AS
             DBMS_OUTPUT.put_line(SQLCODE()||': The value is NULL. Enter the correct value');
         WHEN integrity_err THEN
             DBMS_OUTPUT.put_line(SQLCODE()||': There are no necessary entries in the tables of  
-                                  Customers and Passports.');
+                                  Hotels and Tr_operators.');
         WHEN OTHERS THEN
             DBMS_OUTPUT.put_line(SQLCODE || ': ' || SQLERRM);
     END p_update_tour;

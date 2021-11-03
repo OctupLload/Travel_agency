@@ -15,6 +15,7 @@ CREATE OR REPLACE PACKAGE BODY pkg_flights AS
     PROCEDURE p_create_flight(p_new_departure_date IN flights.departure_date%TYPE,
                               p_new_departure_time IN flights.departure_time%TYPE,
                               p_new_airline_id IN flights.airline_id%TYPE) IS
+        v_ins_flight_id flights.flight_id%TYPE;
         v_count_airline INTEGER;
         integrity_err EXCEPTION;
         null_err EXCEPTION;
@@ -29,9 +30,10 @@ CREATE OR REPLACE PACKAGE BODY pkg_flights AS
             p_new_airline_id IS NOT NULL) THEN
             IF (v_count_airline >= 1) THEN
                 INSERT INTO flights(departure_date, departure_time, airline_id)
-                    VALUES(p_new_departure_date, p_new_departure_time, p_new_airline_id);
+                    VALUES(p_new_departure_date, p_new_departure_time, p_new_airline_id)
+                    RETURNING flight_id INTO v_ins_flight_id;
                 COMMIT;
-                DBMS_OUTPUT.put_line(SQLCODE()||': Record inserted successfully'); 
+                DBMS_OUTPUT.put_line(SQLCODE()||': Record inserted successfully. Record id = ' || v_ins_flight_id); 
             ELSE
                 RAISE integrity_err;
             END IF;

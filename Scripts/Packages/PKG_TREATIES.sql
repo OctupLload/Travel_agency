@@ -18,6 +18,7 @@ CREATE OR REPLACE PACKAGE BODY pkg_treaties AS
                               p_new_employee_id IN treaties.employee_id%TYPE,
                               p_new_tour_id IN treaties.tour_id%TYPE,
                               p_new_ticket_id IN treaties.ticket_id%TYPE) IS
+        v_ins_treaty_id treaties.treaty_id%TYPE;
         v_count_customer INTEGER;
         v_count_employee INTEGER;
         v_count_tour INTEGER;
@@ -54,9 +55,10 @@ CREATE OR REPLACE PACKAGE BODY pkg_treaties AS
                 v_count_tour >=1 AND
                 v_count_ticket >=1) THEN
                 INSERT INTO treaties(customer_id, employee_id, tour_id, ticket_id)
-                VALUES(p_new_customer_id, p_new_employee_id, p_new_tour_id, p_new_ticket_id);
+                    VALUES(p_new_customer_id, p_new_employee_id, p_new_tour_id, p_new_ticket_id)
+                    RETURNING treaty_id INTO v_ins_treaty_id;
                 COMMIT;
-                DBMS_OUTPUT.put_line(SQLCODE()||': Record inserted successfully'); 
+                DBMS_OUTPUT.put_line(SQLCODE()||': Record inserted successfully. Record id = ' || v_ins_treaty_id); 
             ELSE
                 RAISE integrity_err;
             END IF;
@@ -68,7 +70,7 @@ CREATE OR REPLACE PACKAGE BODY pkg_treaties AS
             DBMS_OUTPUT.put_line(SQLCODE()||': The value is NULL. Enter the correct value');
         WHEN integrity_err THEN
             DBMS_OUTPUT.put_line(SQLCODE()||': There are no necessary entries in the tables of  
-                                  Customers and Passports.');
+                                  Customers, Staff, Tours, Tickets.');
         WHEN OTHERS THEN 
             DBMS_OUTPUT.put_line(SQLCODE || ': ' || SQLERRM);
     END p_create_treaty;

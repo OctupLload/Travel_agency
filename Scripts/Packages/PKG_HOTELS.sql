@@ -15,13 +15,15 @@ CREATE OR REPLACE PACKAGE BODY pkg_hotels AS
     PROCEDURE p_create_hotel(p_new_hotel_name IN hotels.hotel_name%TYPE,
                              p_new_star_rating IN hotels.star_rating%TYPE,
                              p_new_rating IN hotels.rating%TYPE) IS
+        v_ins_hotel_id hotels.hotel_id%TYPE;
         null_err EXCEPTION;
     BEGIN
         IF p_new_hotel_name IS NOT NULL THEN
             INSERT INTO hotels(hotel_name, star_rating, rating)
-                VALUES(p_new_hotel_name, p_new_star_rating, p_new_rating);
+                VALUES(p_new_hotel_name, p_new_star_rating, p_new_rating)
+                RETURNING hotel_id INTO v_ins_hotel_id;
             COMMIT;
-            DBMS_OUTPUT.put_line(SQLCODE()||': Record inserted successfully');
+            DBMS_OUTPUT.put_line(SQLCODE()||': Record inserted successfully. Record id = ' || v_ins_hotel_id);
         ELSE 
             RAISE null_err;
         END IF;

@@ -12,6 +12,7 @@ END pkg_pass_cust;
 CREATE OR REPLACE PACKAGE BODY pkg_pass_cust AS
     PROCEDURE p_create_pass_cust(p_new_customer_id IN pass_cust.customer_id%TYPE,
                                  p_new_passport_id IN pass_cust.passport_id%TYPE) IS
+        v_ins_pass_cust_id pass_cust.pass_cust_id%TYPE;
         v_count_customer INTEGER;
         v_count_passport INTEGER;
         integrity_err EXCEPTION;
@@ -31,9 +32,10 @@ CREATE OR REPLACE PACKAGE BODY pkg_pass_cust AS
             p_new_passport_id IS NOT NULL) THEN
             IF(v_count_customer >= 1 AND v_count_passport >=1) THEN
                 INSERT INTO pass_cust(customer_id, passport_id)
-                VALUES(p_new_customer_id, p_new_passport_id);
+                    VALUES(p_new_customer_id, p_new_passport_id)
+                    RETURNING pass_cust_id INTO v_ins_pass_cust_id;
                 COMMIT;
-                DBMS_OUTPUT.put_line(SQLCODE()||': Record inserted successfully'); 
+                DBMS_OUTPUT.put_line(SQLCODE()||': Record inserted successfully. Record id = ' || v_ins_pass_cust_id); 
             ELSE
                 RAISE integrity_err;
             END IF;

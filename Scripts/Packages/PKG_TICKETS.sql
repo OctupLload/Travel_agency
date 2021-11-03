@@ -12,6 +12,7 @@ END pkg_tickets;
 CREATE OR REPLACE PACKAGE BODY pkg_tickets AS
     PROCEDURE p_create_ticket(p_new_class_of_service IN tickets.class_of_service%TYPE,
                               p_new_flight_id IN tickets.flight_id%TYPE) IS
+        v_ins_ticket_id tickets.ticket_id%TYPE;
         v_count_flight INTEGER;
         integrity_err EXCEPTION;
         null_err EXCEPTION;
@@ -25,9 +26,10 @@ CREATE OR REPLACE PACKAGE BODY pkg_tickets AS
             p_new_flight_id IS NOT NULL) THEN
             IF(v_count_flight >= 1) THEN
                 INSERT INTO tickets(class_of_service, flight_id)
-                VALUES(p_new_class_of_service, p_new_flight_id);
+                    VALUES(p_new_class_of_service, p_new_flight_id)
+                    RETURNING ticket_id INTO v_ins_ticket_id;
                 COMMIT;
-                DBMS_OUTPUT.put_line(SQLCODE()||': Record inserted successfully'); 
+                DBMS_OUTPUT.put_line(SQLCODE()||': Record inserted successfully. Record id = ' || v_ins_ticket_id); 
             ELSE
                 RAISE integrity_err;
             END IF;
@@ -38,8 +40,7 @@ CREATE OR REPLACE PACKAGE BODY pkg_tickets AS
         WHEN null_err THEN
             DBMS_OUTPUT.put_line(SQLCODE()||': The value is NULL. Enter the correct value');
         WHEN integrity_err THEN
-            DBMS_OUTPUT.put_line(SQLCODE()||': There are no necessary entries in the tables of  
-                                  Customers and Passports.');
+            DBMS_OUTPUT.put_line(SQLCODE()||': There are no necessary entries in the tables of Flights.');
         WHEN OTHERS THEN 
             DBMS_OUTPUT.put_line(SQLCODE || ': ' || SQLERRM);
     END p_create_ticket;
@@ -100,8 +101,7 @@ CREATE OR REPLACE PACKAGE BODY pkg_tickets AS
         WHEN null_err THEN
             DBMS_OUTPUT.put_line(SQLCODE()||': The value is NULL. Enter the correct value');
         WHEN integrity_err THEN
-            DBMS_OUTPUT.put_line(SQLCODE()||': There are no necessary entries in the tables of  
-                                  Customers and Passports.');
+            DBMS_OUTPUT.put_line(SQLCODE()||': There are no necessary entries in the tables of Flights.');
         WHEN OTHERS THEN
             DBMS_OUTPUT.put_line(SQLCODE || ': ' || SQLERRM);
     END p_update_ticket;

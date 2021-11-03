@@ -111,7 +111,6 @@
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-18 15:36:00 UTC</createdTime>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
-<indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="E7132222-7CAA-AFF7-5C76-1FCC2934F1B2"/>
@@ -121,7 +120,6 @@
 <createdBy>Пользователь</createdBy>
 <createdTime>2021-10-18 15:36:00 UTC</createdTime>
 <ownerDesignName>Travel_agency_db</ownerDesignName>
-<indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="94683F95-63B1-3596-E972-3D1E69A9A9C2"/>

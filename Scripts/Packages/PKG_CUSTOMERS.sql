@@ -24,20 +24,20 @@ CREATE OR REPLACE PACKAGE BODY pkg_customers AS
         v_ins_customer_id customers.customer_id%TYPE;
         null_err EXCEPTION;
     BEGIN
-        IF (p_new_last_name IS NOT NULL OR
-            p_new_first_name IS NOT NULL OR
-            p_new_surname  IS NOT NULL OR
-            p_new_birthdate  IS NOT NULL OR
+        IF (p_new_last_name IS NOT NULL AND
+            p_new_first_name IS NOT NULL AND
+            p_new_surname  IS NOT NULL AND
+            p_new_birthdate  IS NOT NULL AND
             p_new_phone_number IS NOT NULL) THEN
             INSERT INTO customers(last_name,
                                   first_name,
                                   surname,
-                                  birhdate,
+                                  birthdate,
                                   phone_number)
                 VALUES(p_new_last_name,
                        p_new_first_name,
                        p_new_surname,
-                       p_new_birhdate,
+                       p_new_birthdate,
                        p_new_phone_number)
                 RETURNING customer_id INTO v_ins_customer_id;
             COMMIT;

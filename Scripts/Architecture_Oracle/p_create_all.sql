@@ -1,15 +1,19 @@
 /* ----Description------
 Generation code:
-    Constraint on line 21 to 22
-    Sequence on line 24 to 28
-    Trigger on line 30 to 57
-    Package/Packag body on line 60 to 350
-    Upload Package/Packge body in file on line 330 to 349
+    Directory on line 24
+    Constraint(with upload) on line 27 to 47
+    Sequence(with upload) on line 50 to 74
+    Trigger(with upload) on line 77 to 122
+    Package/Package body(with upload) on line 125 to 413
+    
+    Note: Trigger is not generate if there is no primary key in the table!!!
 */
 
 create or replace PROCEDURE p_create_all (p_table_name IN VARCHAR) AS
     v_pk_col_name VARCHAR(100);
-    v_text VARCHAR2(1000);
+    v_constr_text CLOB;
+    v_sequence_text CLOB;
+    v_trigger_text CLOB;
 BEGIN
     SELECT column_name 
         INTO v_pk_col_name
@@ -17,45 +21,106 @@ BEGIN
     WHERE column_id = 1 AND
           table_name = UPPER(p_table_name);
 
-
---    EXECUTE IMMEDIATE 'ALTER TABLE '||p_table_name||
---                      ' ADD CONSTRAINT PK_'||p_table_name||' PRIMARY KEY('||v_pk_col_name||')';
---
---    EXECUTE IMMEDIATE 'CREATE SEQUENCE SEQ_'||p_table_name||'
---                MINVALUE 1 
---                START WITH 1
---                INCREMENT BY 1
---                CACHE 20';
---
---    DECLARE 
---        v_constraint_type VARCHAR(20);
---        v_index_name VARCHAR(100);
---        v_pk_column VARCHAR(100);
---    BEGIN
---        SELECT constraint_type, index_name 
---            INTO v_constraint_type, v_index_name
---        FROM user_constraints 
---        WHERE constraint_type = 'P' AND 
---              table_name = p_table_name;
---        
---        SELECT column_name
---            INTO v_pk_column
---        FROM user_ind_columns
---        WHERE index_name = v_index_name;
---    
---        EXECUTE IMMEDIATE 'CREATE OR REPLACE TRIGGER T_B_'||p_table_name||'
---                             BEFORE INSERT 
---                                    ON '||p_table_name||'
---                                    FOR EACH ROW
---                           BEGIN
---                                IF :NEW.'||v_pk_column||' IS NULL THEN 
---                                    SELECT SEQ_'||p_table_name||'.NEXTVAL
---                                        INTO :NEW.'||v_pk_column||'
---                                    FROM dual;
---                                END IF;
---                           END;';
---    END; 
+    EXECUTE IMMEDIATE 'CREATE OR REPLACE DIRECTORY uploaded_objects AS ''D:\''';
+    
+    --For constraint(index)
+    DECLARE
+        l_file    UTL_FILE.FILE_TYPE;
+        l_buffer  VARCHAR2(32767);
+        l_amount  BINARY_INTEGER := 32767;
+        l_pos     INTEGER := 1;
+        l_name    VARCHAR(100);
+    BEGIN
+        v_constr_text:= 'ALTER TABLE '||p_table_name||
+                          ' ADD CONSTRAINT PK_'||p_table_name||' PRIMARY KEY('||v_pk_col_name||');';
+        l_name:= 'IDX_'||p_table_name||'.sql';
+        l_file := UTL_FILE.fopen('UPLOADED_OBJECTS', l_name, 'w', 32767);
+        LOOP
+            DBMS_LOB.read (v_constr_text, l_amount, l_pos, l_buffer);
+            UTL_FILE.put(l_file, l_buffer);
+            l_pos := l_pos + l_amount;
+        END LOOP;
+    EXCEPTION
+          WHEN OTHERS THEN
+            DBMS_OUTPUT.put_line(SQLERRM);
+            UTL_FILE.fclose(l_file);
+    END;
+    
+    --For sequence
+    DECLARE 
+        l_file    UTL_FILE.FILE_TYPE;
+        l_buffer  VARCHAR2(32767);
+        l_amount  BINARY_INTEGER := 32767;
+        l_pos     INTEGER := 1;
+        l_name    VARCHAR(100);
+    BEGIN
+        v_sequence_text:= 'CREATE SEQUENCE SEQ_'||p_table_name||'
+                            MINVALUE 1 
+                            START WITH 1
+                            INCREMENT BY 1
+                            CACHE 20;';
+    
+        l_name:= 'SEQ_'||p_table_name||'.sql';
+        l_file := UTL_FILE.fopen('UPLOADED_OBJECTS', l_name, 'w', 32767);
+        LOOP
+            DBMS_LOB.read (v_sequence_text, l_amount, l_pos, l_buffer);
+            UTL_FILE.put(l_file, l_buffer);
+            l_pos := l_pos + l_amount;
+        END LOOP;
+    EXCEPTION
+          WHEN OTHERS THEN
+            DBMS_OUTPUT.put_line(SQLERRM);
+            UTL_FILE.fclose(l_file);
+    END;
+    
+    --For trigger
+    DECLARE 
+        v_constraint_type VARCHAR(20);
+        v_index_name VARCHAR(100);
+        v_pk_column VARCHAR(100);l_file    UTL_FILE.FILE_TYPE;
+        l_buffer  VARCHAR2(32767);
+        l_amount  BINARY_INTEGER := 32767;
+        l_pos     INTEGER := 1;
+        l_name    VARCHAR(100);
+    BEGIN
+        SELECT constraint_type, index_name 
+            INTO v_constraint_type, v_index_name
+        FROM user_constraints 
+        WHERE constraint_type = 'P' AND 
+              table_name = p_table_name;
         
+        SELECT column_name
+            INTO v_pk_column
+        FROM user_ind_columns
+        WHERE index_name = v_index_name;
+        
+        v_trigger_text:= 'CREATE OR REPLACE TRIGGER T_B_'||p_table_name||'
+                             BEFORE INSERT 
+                                    ON '||p_table_name||'
+                                    FOR EACH ROW
+                           BEGIN
+                                IF :NEW.'||v_pk_column||' IS NULL THEN 
+                                    SELECT SEQ_'||p_table_name||'.NEXTVAL
+                                        INTO :NEW.'||v_pk_column||'
+                                    FROM dual;
+                                END IF;
+                           END;';
+
+        l_name:= 'T_B_'||p_table_name||'.sql';
+        l_file := UTL_FILE.fopen('UPLOADED_OBJECTS', l_name, 'w', 32767);
+        LOOP
+            DBMS_LOB.read (v_trigger_text, l_amount, l_pos, l_buffer);
+            UTL_FILE.put(l_file, l_buffer);
+            l_pos := l_pos + l_amount;
+        END LOOP;
+        l_pos := 1;
+        UTL_FILE.fclose(l_file);
+    EXCEPTION
+          WHEN OTHERS THEN
+            DBMS_OUTPUT.put_line(SQLERRM);
+            UTL_FILE.fclose(l_file);
+    END; 
+   
     --Block to generate CRUD package for table
     DECLARE 
         v_col_name VARCHAR(100);
@@ -75,6 +140,12 @@ BEGIN
         v_head_result CLOB;
         v_body_result CLOB;
         v_all_result CLOB;
+        l_file    UTL_FILE.FILE_TYPE;
+        l_buffer  VARCHAR2(32767);
+        l_amount  BINARY_INTEGER := 32767;
+        l_pos     INTEGER := 1;
+        l_name    VARCHAR(100);
+        
         CURSOR cur_get_col_name IS 
             SELECT column_name FROM user_tab_columns
             where table_name = p_table_name AND 
@@ -326,26 +397,18 @@ BEGIN
         
         v_all_result:= v_head_result||chr(10)||
                        v_body_result;
-                       
-        EXECUTE IMMEDIATE 'CREATE OR REPLACE DIRECTORY uploaded_objects AS ''D:\''';
-        DECLARE
-          l_file    UTL_FILE.FILE_TYPE;
-          l_buffer  VARCHAR2(32767);
-          l_amount  BINARY_INTEGER := 32767;
-          l_pos     INTEGER := 1;
-        BEGIN
-          
-          l_file := UTL_FILE.fopen('UPLOADED_OBJECTS', 'PKG_template.sql', 'w', 32767);
+
         
-          LOOP
+        l_name:= 'PKG_'||p_table_name||'.sql';
+        l_file := UTL_FILE.fopen('UPLOADED_OBJECTS', l_name, 'w', 32767);
+        LOOP
             DBMS_LOB.read (v_all_result, l_amount, l_pos, l_buffer);
             UTL_FILE.put(l_file, l_buffer);
             l_pos := l_pos + l_amount;
-          END LOOP;
-        EXCEPTION
-          WHEN OTHERS THEN
-            DBMS_OUTPUT.put_line(SQLERRM);
-            UTL_FILE.fclose(l_file);
-        END;
+      END LOOP;
+    EXCEPTION
+      WHEN OTHERS THEN
+        DBMS_OUTPUT.put_line(SQLERRM);
+        UTL_FILE.fclose(l_file);
     END;
 END p_create_all;

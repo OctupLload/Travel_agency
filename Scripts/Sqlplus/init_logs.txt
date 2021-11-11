@@ -1,0 +1,749 @@
+
+SQL*Plus: Release 11.2.0.2.0 Production on Ïò Íîÿ 12 01:30:12 2021
+
+Copyright (c) 1982, 2010, Oracle.  All rights reserved.
+
+Connected.
+
+Table created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Table altered.
+
+
+Table created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Table altered.
+
+
+Table created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Index created.
+
+
+Table altered.
+
+
+Table created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Table altered.
+
+
+Table created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Index created.
+
+
+Index created.
+
+
+Table altered.
+
+
+Table created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Table altered.
+
+
+Table created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Table altered.
+
+
+Table created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Index created.
+
+
+Table altered.
+
+
+Table created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Index created.
+
+
+Table altered.
+
+
+Table created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Index created.
+
+
+Index created.
+
+
+Table altered.
+
+
+Table created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Table altered.
+
+
+Table created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+Disconnected from Oracle Database 11g Express Edition Release 11.2.0.2.0 - Production
+Connected.
+
+Sequence created.
+
+
+Sequence created.
+
+
+Sequence created.
+
+
+Sequence created.
+
+
+Sequence created.
+
+
+Sequence created.
+
+
+Sequence created.
+
+
+Sequence created.
+
+
+Sequence created.
+
+
+Sequence created.
+
+
+Sequence created.
+
+
+Sequence created.
+
+Disconnected from Oracle Database 11g Express Edition Release 11.2.0.2.0 - Production
+Connected.
+
+Trigger created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+Disconnected from Oracle Database 11g Express Edition Release 11.2.0.2.0 - Production
+Connected.
+
+Package created.
+
+
+Package body created.
+
+Disconnected from Oracle Database 11g Express Edition Release 11.2.0.2.0 - Production
+Connected.
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+Disconnected from Oracle Database 11g Express Edition Release 11.2.0.2.0 - Production
+Connected.
+
+Procedure created.
+
+Disconnected from Oracle Database 11g Express Edition Release 11.2.0.2.0 - Production
